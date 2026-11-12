@@ -1,0 +1,180 @@
+{
+  "retrieved": "2026-11-11",
+  "note": "Original publisher screenshots and icons from Google Play and App Store are retained in the gallery. Presentation-only vector interface reconstructions are documented separately under previews.",
+  "apps": {
+    "terra": {
+      "store": "https://play.google.com/store/apps/details?id=com.club.terra",
+      "files": [
+        {
+          "file": "assets/apps/terra-03.webp",
+          "source": "https://play-lh.googleusercontent.com/7dSyNWgm-OP5ix6oHR1vIY5p8UJtwbcEg8wEVuASZCSqp7nlLdD3K4nvSTM0wG4iBdHr4wGEI8YxQ9ujZTxuY6k",
+          "bytes": 42120
+        },
+        {
+          "file": "assets/apps/terra-04.webp",
+          "source": "https://play-lh.googleusercontent.com/oZUC9jeSR7uxfFlGZfCkbA5wC1EmGsdDt-K2L7ZMC6EZCHh9RYATzo92cEN21Js1q-8bQjqgB-L2HnmmjtiTGQ",
+          "bytes": 75684
+        },
+        {
+          "file": "assets/apps/terra-05.webp",
+          "source": "https://play-lh.googleusercontent.com/e306zy5XZI6SL5nElj4qDI3cUrhV0gvaDmXrKTi6xqTgmUYnAsDKvzwldywoDlrv95FIgCFlCfq1_Sp5feiD",
+          "bytes": 66432
+        },
+        {
+          "file": "assets/apps/terra-02.webp",
+          "source": "https://play-lh.googleusercontent.com/UZV2EpOznw3HQ9JbmyREZfDhg_UapLYSmKDd3fo7JemJwwDxjdVItqghLzWBw8Fs8sAos-JyvbNGBgfwpuA1",
+          "bytes": 43324
+        }
+      ]
+    },
+    "citadel": {
+      "store": "https://play.google.com/store/apps/details?id=one.citadel.mobile",
+      "files": [
+        {
+          "file": "assets/apps/citadel-icon.webp",
+          "source": "https://play-lh.googleusercontent.com/oPffgBfFsxb_4b-wwjbh0c1uZL9W4I2hPdJyZwHJcKDGgqEu1juFcUwUUcZ6jwqzWQUTVlVb4Pa4uXEYu8J2",
+          "bytes": 1152
+        },
+        {
+          "file": "assets/apps/citadel-01.webp",
+          "source": "https://play-lh.googleusercontent.com/5Rpo0gsgmAtnceHk85anBTqui1sKTmhMyTtI2EISHpIxej9dHZJmc4Fauco79kfHWYPoQe5z6kmXNGV96QzPF3Q",
+          "bytes": 368494
+        },
+        {
+          "file": "assets/apps/citadel-03.webp",
+          "source": "https://play-lh.googleusercontent.com/ZQZQdwAwyRWXNiPJvK-LBpgxFxTSO6WzZL6VrbnJRA9DMmvalQNqk63x-68TYrm087yjFhBYoPkp9-zS7YQWlA",
+          "bytes": 460332
+        },
+        {
+          "file": "assets/apps/citadel-04.webp",
+          "source": "https://play-lh.googleusercontent.com/ygVur4DXOA9aexdXpvt0RT0g0lLYXg6UcRFPor1eXUojaaaXC0IkfbjZH5zrM4jX_pEdzboKPfti8zxUKP0MxA",
+          "bytes": 459202
+        }
+      ]
+    },
+    "tayyab": {
+      "store": "https://play.google.com/store/apps/details?id=co.tayyab.app",
+      "files": [
+        {
+          "file": "assets/apps/tayyab-icon.webp",
+          "source": "https://play-lh.googleusercontent.com/vj3j8oBO8_8-XVTsSUe15NyTFsF6ywdu15pAp6oY4Y9Xl18eTffh3Th6our-U_Vv2adP1Y-7GF-QcyqQUrJR",
+          "bytes": 1082
+        },
+        {
+          "file": "assets/apps/tayyab-02.webp",
+          "source": "https://play-lh.googleusercontent.com/2az0v2VD_lSIjIgMCGqSguRyHTStUXTke6YbN6zR-TsLoZh-x8TE-tq-7LPzkvR5AD7JvmaVKCzJI4FGhv9CJeA",
+          "bytes": 527198
+        },
+        {
+          "file": "assets/apps/tayyab-04.webp",
+          "source": "https://play-lh.googleusercontent.com/d4QN0A8cNKLAMC4hNCnMpnddxVIo68hKC1TF3JIxJanJkoSOOU7jlbGREvlhGp0NgwE1ciyDAcA9vbyiRvk4HJg",
+          "bytes": 475096
+        },
+        {
+          "file": "assets/apps/tayyab-05.webp",
+          "source": "https://play-lh.googleusercontent.com/g1VqTVusY8x_e0VzA-mBr7TkTEkA-3MMT9-FN9dVZto5NWiK2AHl-p8Koin5LVVYLfD85Qg1bXMm5UYiQkV0JhE",
+          "bytes": 313968
+        }
+      ]
+    },
+    "beauty": {
+      "store": "https://play.google.com/store/apps/details?id=com.beautyagent",
+      "files": [
+        {
+          "file": "assets/apps/beauty-icon.webp",
+          "source": "https://play-lh.googleusercontent.com/dSV_sD92VYDU6OnMreJb6z5I5XFYWPutrtiXFKicASXA-4DqqmGTEKg-le76sbYIxHYmLUjO8TBXs1iJELq7",
+          "bytes": 13074
+        },
+        {
+          "file": "assets/apps/beauty-01.webp",
+          "source": "https://play-lh.googleusercontent.com/a6OCpIOGZU6PLubeSq1xhZ4ityH40D0u1HK2V_KiH_q60jB0Dwn_ZqSkaYkSsQxF9qkZUz74iCqWxJfsbc7Usw",
+          "bytes": 429858
+        },
+        {
+          "file": "assets/apps/beauty-03.webp",
+          "source": "https://play-lh.googleusercontent.com/Kli_LS5T_jH_uhNy-HkZb-qLgyTNmMknUbOZ0uCsnIUZ_ChZBUbzNOXFLkRLZtsnrB3s4knE024N2vuzm66KnKw",
+          "bytes": 306924
+        },
+        {
+          "file": "assets/apps/beauty-04.webp",
+          "source": "https://play-lh.googleusercontent.com/I1W7SafcOlp01mO-H6VAXvZdLqASj0e4a5pI0fajQ4uGUZs2EQ2Jn6s1UHTIaFrQJfB30X43BcVjOWm5ENrGSjk",
+          "bytes": 442658
+        },
+        {
+          "file": "assets/apps/beauty-appstore-calendar.webp",
+          "source": "https://is1-ssl.mzstatic.com/image/thumb/PurpleSource211/v4/60/cf/7a/60cf7aab-5ebe-3856-8018-b83a1d8a44cf/8dc95b7b-f129-4e3c-b86d-1f23d0d9a259__U0440_U0430_U0437_1.png/900x0w.png",
+          "bytes": 173146,
+          "note": "Official App Store screenshot, converted to WebP. Interface crop is CSS only."
+        },
+        {
+          "file": "assets/apps/beauty-appstore-assistant.webp",
+          "source": "https://is1-ssl.mzstatic.com/image/thumb/PurpleSource211/v4/47/f3/e3/47f3e35f-aa79-84c4-ffa8-90bdc472dd9f/3809e81d-f40c-413e-9ff9-d1b0bd72c0ca__U043f_U044f_U0442_U044c_1.png/900x0w.png",
+          "bytes": 175648,
+          "note": "Official App Store screenshot, converted to WebP. Interface crop is CSS only."
+        }
+      ]
+    },
+    "otis": {
+      "store": "https://play.google.com/store/apps/details?id=kz.otisdevteam.otis_security",
+      "files": [
+        {
+          "file": "assets/apps/otis-icon.webp",
+          "source": "https://play-lh.googleusercontent.com/wue54qEyalkfKcCIPLAdzu9pBGMdc4crBDvL_Fdjq8hjCdtFkzvFDtcwXLpR7WognQ0Cxw-_4rTF3yYHi57v",
+          "bytes": 11718
+        },
+        {
+          "file": "assets/apps/otis-01.webp",
+          "source": "https://play-lh.googleusercontent.com/bRg3OExgVAFrk4aYCQVFLsTSyVA_dgxhiolxj5sPX0OPfmR-_ocII-d3-l03KO1DNvIe6I6DfOv_8nk1Lo8h1A",
+          "bytes": 582960
+        },
+        {
+          "file": "assets/apps/otis-02.webp",
+          "source": "https://play-lh.googleusercontent.com/mLWFGHVD0zCbN4zD4ERtLMeFpP7sLK7WbmaogYoGo-4Xhe1W-F6ND6fQhrpRXVOPXqFTi32FdsVEJMYekM-o0zw",
+          "bytes": 525042
+        },
+        {
+          "file": "assets/apps/otis-03.webp",
+          "source": "https://play-lh.googleusercontent.com/d8snyXAVWU_sYldlWMMzfWHeuqAIfYDmmsRJTkxkn3LyzCNIE6qfsnDsp32ZPu782KZQZE7IZ7z8sAwBttqKeFo",
+          "bytes": 499048
+        }
+      ]
+    }
+  },
+  "previews": {
+    "kind": "Editable SVG interface reconstructions for presentation, not original application screenshots.",
+    "generator": "scripts/build-app-previews.mjs",
+    "size": {
+      "width": 414,
+      "height": 900
+    },
+    "files": {
+      "terra": [
+        "assets/apps/screens/terra-events.svg",
+        "assets/apps/screens/terra-schools.svg"
+      ],
+      "citadel": [
+        "assets/apps/screens/citadel-staking.svg",
+        "assets/apps/screens/citadel-wallet.svg"
+      ],
+      "tayyab": [
+        "assets/apps/screens/tayyab-card.svg",
+        "assets/apps/screens/tayyab-sadaqah.svg"
+      ],
+      "beauty": [
+        "assets/apps/screens/beauty-calendar.svg",
+        "assets/apps/screens/beauty-assistant.svg"
+      ],
+      "otis": [
+        "assets/apps/screens/otis-home.svg",
+        "assets/apps/screens/otis-objects.svg"
+      ]
+    }
+  },
+  "branding": {
+    "crtex": {
+      "file": "assets/apps/crtex-logo.svg",
+      "source": "User-provided CRTEX logo reference",
+      "note": "Vector reproduction of the supplied blue C mark."
+    }
+  }
+}

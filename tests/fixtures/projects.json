@@ -1,0 +1,16 @@
+{
+  "ru": {
+    "project.terra.description": "Экосистема сообщества в одном приложении: от мероприятий и обучения до волонтёрства и наставничества.",
+    "project.citadel.description": "Мобильный кошелёк с доступом к Web3: подключение DApps, работа с балансами и криптовалютными транзакциями.",
+    "project.tayyab.description": "Исламский финансовый сервис в Казахстане: переводы, история операций, виртуальные и физические карты.",
+    "project.beauty.description": "Рабочее пространство мастера: клиентская база, расписание, управление записями и связь с клиентами.",
+    "project.otis.description": "Внутреннее приложение групп быстрого реагирования: объекты на карте, геолокация и события в реальном времени."
+  },
+  "en": {
+    "project.terra.description": "A community ecosystem in one app: events, learning, volunteering and mentorship.",
+    "project.citadel.description": "A mobile wallet for Web3: DApp connections, balances and cryptocurrency transactions.",
+    "project.tayyab.description": "An Islamic financial service in Kazakhstan: transfers, transaction history, virtual and physical cards.",
+    "project.beauty.description": "A workspace for service professionals: client profiles, schedules, appointment management and notifications.",
+    "project.otis.description": "An internal app for rapid response teams: mapped locations, geolocation and real-time events."
+  }
+}

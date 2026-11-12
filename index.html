@@ -1,126 +1,833 @@
 <!doctype html>
 <html lang="ru">
-<head>
-  <meta charset="utf-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1">
-  <meta name="color-scheme" content="light dark">
-  <title>Виталий Шестаков — Flutter Developer</title>
-  <meta name="description" content="Виталий Шестаков — Flutter-разработчик. Приложения для iOS, Android, Web и Desktop: архитектура, интеграции, публикация и поддержка.">
-  <meta property="og:type" content="website">
-  <meta property="og:title" content="Виталий Шестаков — Flutter Developer">
-  <meta property="og:description" content="От архитектуры до релиза. Опыт, проекты и технологии.">
-  <meta property="og:url" content="https://vitaliyshestakov.github.io/portfolio/">
-  <meta property="og:image" content="https://vitaliyshestakov.github.io/portfolio/assets/preview.png">
-  <meta property="og:locale" content="ru_RU">
-  <meta name="twitter:card" content="summary_large_image">
-  <meta name="theme-color" content="#f6f6f1">
-  <link rel="icon" type="image/svg+xml" href="assets/favicon.svg">
-  <link rel="stylesheet" href="styles.css">
-  <script src="theme.js"></script>
-  <script src="script.js" defer></script>
-</head>
-<body>
-  <a class="skip-link" href="#main">Перейти к содержимому</a>
-  <header class="header">
-    <div class="container header-inner">
-      <a class="wordmark" href="#home" aria-label="Виталий Шестаков — на главную">vs<span>_</span></a>
-      <nav aria-label="Основная навигация">
-        <a href="#projects">Проекты</a>
-        <a href="#experience">Опыт</a>
-        <a href="#stack">Стек</a>
-        <a href="#contact">Контакты</a>
-      </nav>
-      <div class="header-actions">
-        <button class="theme-toggle" type="button" aria-label="Включить тёмную тему" aria-pressed="false" hidden>
-          <svg class="moon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" aria-hidden="true"><path d="M20.3 15.3A8.7 8.7 0 0 1 8.7 3.7a8.8 8.8 0 1 0 11.6 11.6Z"/></svg>
-          <svg class="sun" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" aria-hidden="true"><circle cx="12" cy="12" r="4"/><path d="M12 2v2m0 16v2M2 12h2m16 0h2M5 5l1.5 1.5m11 11L19 19M5 19l1.5-1.5m11-11L19 5"/></svg>
-        </button>
-        <a class="header-contact" href="https://t.me/Shestakov_V" target="_blank" rel="noopener noreferrer">Связаться <span aria-hidden="true">↗</span></a>
-      </div>
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="color-scheme" content="light dark">
+    <title>Виталий Шестаков — Senior Flutter Developer</title>
+    <meta name="description" content="Виталий Шестаков — Senior Flutter Developer. Архитектура, интерфейсы и релизы для iOS, Android и Web. Коммерческая разработка с 2021 года.">
+    <meta property="og:type" content="website">
+    <meta property="og:title" content="Виталий Шестаков — Senior Flutter Developer">
+    <meta property="og:description" content="Виталий Шестаков — Senior Flutter Developer. Архитектура, интерфейсы и релизы для iOS, Android и Web. Коммерческая разработка с 2021 года.">
+    <meta property="og:url" content="https://vitaliyshestakov.github.io/portfolio/">
+    <meta property="og:locale" content="ru_RU">
+    <meta name="twitter:card" content="summary">
+    <meta name="theme-color" content="#F5F5F3">
+    <link rel="icon" type="image/svg+xml" href="assets/favicon.svg">
+    <link rel="preload" as="font" href="assets/onest-cyrillic.woff2" type="font/woff2" crossorigin>
+    <link rel="preload" as="font" href="assets/onest-latin.woff2" type="font/woff2" crossorigin>
+    <link rel="stylesheet" href="styles.css">
+    <script src="theme.js"></script>
+    <script src="locales.js" defer></script>
+    <script src="script.js" defer></script>
+    <script src="experience.js" defer></script>
+    <script src="interactions.js" defer></script>
+  </head>
+  <body>
+    <svg class="svg-definitions" aria-hidden="true" xmlns="http://www.w3.org/2000/svg"><defs><symbol id="i-arrow" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"><path d="M5 19 19 5M5 5h14v14"/></symbol><symbol id="i-down" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"><path d="M12 3v18m-7-7 7 7 7-7"/></symbol><symbol id="i-chevron" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"><path d="m9 5 7 7-7 7"/></symbol><symbol id="i-moon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"><path d="M20.3 15.3A8.7 8.7 0 0 1 8.7 3.7a8.8 8.8 0 1 0 11.6 11.6Z"/></symbol><symbol id="i-sun" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="4"/><path d="M12 2v2m0 16v2M2 12h2m16 0h2M5 5l1.5 1.5m11 11L19 19M5 19l1.5-1.5m11-11L19 5"/></symbol><symbol id="i-github" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"><path d="M9 19c-4 1-4-2-6-2m12 5v-4a3.5 3.5 0 0 0-1-3c3.3-.4 7-1.6 7-7a5.5 5.5 0 0 0-1.5-4c.2-1 .2-2-.1-3 0 0-1.2-.4-4 1.5a14 14 0 0 0-7 0C5.6.6 4.4 1 4.4 1c-.3 1-.3 2-.1 3A5.5 5.5 0 0 0 3 8c0 5.4 3.7 6.6 7 7a3.5 3.5 0 0 0-1 3v4"/></symbol><symbol id="i-telegram" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"><path d="m21 3-4 18-6-6-4 3 1-7 13-8ZM3 9l18-6-13 8-5-2Zm5 2 3 4L21 3"/></symbol><symbol id="i-mail" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"><rect x="3" y="5" width="18" height="14" rx="3"/><path d="m4 7 8 6 8-6"/></symbol><symbol id="i-layers" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"><path d="m12 3 9 5-9 5-9-5 9-5Zm-9 9 9 5 9-5M3 16l9 5 9-5"/></symbol><symbol id="i-code" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"><path d="m7 6-6 6 6 6m10-12 6 6-6 6M14 3l-4 18"/></symbol><symbol id="i-check" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"><path d="m5 12 4 4L19 6"/></symbol><symbol id="i-calendar" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"><rect x="3" y="5" width="18" height="16" rx="3"/><path d="M7 2v6m10-6v6M3 11h18m-13 4h2m4 0h2"/></symbol><symbol id="i-pin" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"><path d="M20 10c0 6-8 12-8 12S4 16 4 10a8 8 0 1 1 16 0Z"/><circle cx="12" cy="10" r="2.5"/></symbol><symbol id="i-users" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"><circle cx="9" cy="7" r="4"/><path d="M2 22v-3a7 7 0 0 1 14 0v3M17 3a4 4 0 0 1 0 8m5 11v-3a7 7 0 0 0-4-6"/></symbol><symbol id="i-plus" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"><path d="M12 4v16M4 12h16"/></symbol><symbol id="i-book" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"><path d="M12 5C8 2 4 3 2 4v16c3-2 7-1 10 1 3-2 7-3 10-1V4c-2-1-6-2-10 1Zm0 0v16"/></symbol><symbol id="i-pause" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round"><path d="M9 5v14M15 5v14"/></symbol><symbol id="i-phone" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round"><rect x="6" y="2" width="12" height="20" rx="3"/><path d="M10 18h4"/></symbol><symbol id="i-play" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linejoin="round"><path d="m8 5 11 7-11 7V5Z"/></symbol><symbol id="i-grid" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6"><rect x="3" y="3" width="7" height="7" rx="1"/><rect x="14" y="3" width="7" height="7" rx="1"/><rect x="3" y="14" width="7" height="7" rx="1"/><rect x="14" y="14" width="7" height="7" rx="1"/></symbol><symbol id="i-globe" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round"><circle cx="12" cy="12" r="9"/><ellipse cx="12" cy="12" rx="4" ry="9"/><path d="M3 12h18M5 7h14M5 17h14"/></symbol><symbol id="i-linkedin" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"><rect x="3" y="3" width="18" height="18" rx="3"/><path d="M7.5 10.5v6M11.5 16.5v-6M11.5 13a2.5 2.5 0 0 1 5 0v3.5"/><circle cx="7.5" cy="7.5" r=".8" fill="currentColor" stroke="none"/></symbol><symbol id="i-file" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"><path d="M14 3H6a2 2 0 0 0-2 2v14a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V9l-6-6Z"/><path d="M14 3v6h6M8 13h8M8 17h5"/></symbol></defs></svg>
+<a class="skip-link" href="#main"><span data-i18n="skip" >Перейти к содержимому</span></a>
+    <div class="scroll-progress" aria-hidden="true">
     </div>
-  </header>
-
-  <main id="main">
-    <section class="hero container" id="home" aria-labelledby="hero-title">
-      <div class="hero-copy">
-        <div class="eyebrow"><span class="status-dot"></span> Открыт к предложениям</div>
-        <p class="overline hero-role">Flutter Developer <span>/</span> Москва</p>
-        <h1 id="hero-title">Виталий<br>Шестаков<span class="accent">.</span></h1>
-        <p class="hero-description">Превращаю идеи в&nbsp;приложения.<br>От архитектуры и первого экрана<br class="desktop-break"> до релиза и&nbsp;поддержки.</p>
-        <div class="hero-buttons">
-          <a class="button primary" href="#projects">Посмотреть проекты <span aria-hidden="true">↘</span></a>
-          <a class="button text-button" href="resume.pdf" download>Резюме PDF <span aria-hidden="true">↓</span></a>
-        </div>
-        <div class="hero-socials"><a href="https://github.com/VitaliyShestakov" target="_blank" rel="noopener noreferrer">GitHub ↗</a><span aria-hidden="true">/</span><a href="https://t.me/Shestakov_V" target="_blank" rel="noopener noreferrer">Telegram ↗</a></div>
-      </div>
-
-      <div class="hero-art" aria-label="Мой подход: единая кодовая база Flutter, разделение интерфейса, бизнес-логики и данных">
-        <div class="art-topline"><span class="mono">a little look under the hood</span><span class="art-cross" aria-hidden="true">✳</span></div>
-        <div class="editor">
-          <div class="editor-bar"><span class="window-dots" aria-hidden="true"><i></i><i></i><i></i></span><span>portfolio.dart</span><span class="editor-language">Dart</span></div>
-          <div class="code" aria-hidden="true">
-            <div><span class="line-number">01</span><span class="syntax-purple">class</span> <span class="syntax-yellow">FlutterDeveloper</span> {</div>
-            <div><span class="line-number">02</span>&nbsp; <span class="syntax-purple">final</span> name = <span class="syntax-green">'Виталий'</span>;</div>
-            <div><span class="line-number">03</span>&nbsp; <span class="syntax-purple">final</span> focus = [</div>
-            <div><span class="line-number">04</span>&nbsp; &nbsp; <span class="syntax-green">'Clean Architecture'</span>,</div>
-            <div><span class="line-number">05</span>&nbsp; &nbsp; <span class="syntax-green">'Thoughtful UI'</span>,</div>
-            <div><span class="line-number">06</span>&nbsp; &nbsp; <span class="syntax-green">'Reliable releases'</span>,</div>
-            <div><span class="line-number">07</span>&nbsp; ];</div>
-            <div><span class="line-number">08</span>}</div>
+    <header class="header">
+      <div class="container header-inner">
+        <a class="brand" href="#home" data-i18n-aria-label="homeLabel" aria-label="Виталий Шестаков — на главную">shestakov<span class="brand-dot">.</span></a>
+        <nav class="section-nav" data-i18n-aria-label="navLabel" aria-label="Основная навигация">
+          <a href="#projects"><span data-i18n="nav.projects" >Проекты</span></a><a href="#experience"><span data-i18n="nav.experience" >Опыт</span></a><a href="#stack"><span data-i18n="nav.stack" >Стек</span></a><a href="#contact"><span data-i18n="nav.contact" >Контакты</span></a>
+        </nav>
+        <div class="header-actions">
+          <div class="header-quicklinks" role="group" data-i18n-aria-label="quick.label" aria-label="Быстрые контакты">
+            <a class="header-social header-social-telegram" href="https://t.me/Shestakov_V" target="_blank" rel="noopener noreferrer" data-i18n-aria-label="quick.telegram" aria-label="Написать в Telegram"><span class="header-social-icon"><svg class="icon" aria-hidden="true"><use href="#i-telegram"/></svg></span><span class="header-social-label">Telegram</span></a><a class="header-social header-social-github" href="https://github.com/VitaliyShestakov" target="_blank" rel="noopener noreferrer" data-i18n-aria-label="quick.github" aria-label="Открыть GitHub"><span class="header-social-icon"><svg class="icon" aria-hidden="true"><use href="#i-github"/></svg></span><span class="header-social-label">GitHub</span></a>
           </div>
-          <div class="editor-footer"><span><i class="tiny-dot"></i> Flutter · Dart</span><span>UTF-8</span></div>
+          <span class="header-divider" aria-hidden="true"></span>
+          <div class="header-preferences">
+            <div class="language-switch" role="group" data-i18n-aria-label="languageLabel" aria-label="Язык сайта" hidden>
+              <button type="button" data-language="ru" lang="ru" aria-pressed="true">RU</button><span>/</span><button type="button" data-language="en" lang="en" aria-pressed="false">EN</button>
+            </div>
+            <button class="theme-toggle icon-button" type="button" aria-pressed="false" hidden><svg class="icon moon" aria-hidden="true"><use href="#i-moon"/></svg><svg class="icon sun" aria-hidden="true"><use href="#i-sun"/></svg></button>
+          </div>
         </div>
-        <div class="architecture">
-          <div class="architecture-label mono">разделение ответственности</div>
-          <div class="architecture-flow"><span>UI</span><b aria-hidden="true">→</b><span>BLoC</span><b aria-hidden="true">→</b><span>Data</span></div>
+      </div>
+    </header>
+    <main id="main">
+      <section class="hero" id="home" aria-labelledby="hero-title">
+        <div class="hero-atmosphere" aria-hidden="true">
+          <div class="ambient-glow glow-one">
+          </div>
+          <div class="ambient-glow glow-two">
+          </div>
+          <div class="ambient-grid">
+          </div>
         </div>
-        <div class="art-bottomline"><span class="mono">one codebase. multiple platforms.</span><div class="platforms"><span>iOS</span><span>Android</span><span>Web</span><span>Desktop</span></div></div>
+        <div class="container hero-inner">
+          <div class="hero-layout">
+            <div class="hero-copy">
+              <div class="hero-status">
+                <span class="availability hero-availability"><i></i><span data-i18n="availability">Рассматриваю новые предложения</span></span><span class="hero-location"><svg class="icon" aria-hidden="true"><use href="#i-pin"/></svg><span class="hero-location-city" data-i18n="hero.location.city">Москва</span><span class="hero-location-separator" aria-hidden="true"></span><span class="hero-location-formats" data-i18n="hero.location.formats">Офис · гибрид · удалённо</span></span>
+              </div>
+              <p class="eyebrow hero-role">Senior Flutter Developer</p>
+              <h1 class="hero-title" id="hero-title"><span class="hero-first-name" data-i18n="firstName">Виталий</span>
+<span class="hero-last-name"><span data-i18n="lastName">Шестаков</span><span class="name-period" aria-hidden="true">.</span></span></h1>
+              <p data-i18n="heroLead" class="hero-lead">Мобильная разработка
+от архитектуры до релиза.</p>
+              <p data-i18n="heroDescription" class="hero-description">5+ лет коммерческой Flutter-разработки для iOS, Android и Web. Создаю продукты с нуля: от архитектуры и интеграций до релизов и сопровождения.</p>
+              <div class="hero-buttons">
+                <a class="button button-primary" href="resume.pdf" data-resume-link hreflang="ru" download><span data-i18n="resume">Скачать резюме</span><svg class="icon" aria-hidden="true"><use href="#i-arrow"/></svg></a><a class="button button-secondary" href="#projects"><span data-i18n="viewProjects">Смотреть проекты</span><svg class="icon" aria-hidden="true"><use href="#i-down"/></svg></a>
+              </div>
+              <div class="hero-socials">
+                <a href="https://t.me/Shestakov_V" target="_blank" rel="noopener noreferrer"><svg class="icon" aria-hidden="true"><use href="#i-telegram"/></svg><span>Telegram</span></a><a href="https://github.com/VitaliyShestakov" target="_blank" rel="noopener noreferrer"><svg class="icon" aria-hidden="true"><use href="#i-github"/></svg><span>GitHub</span></a><a href="https://www.linkedin.com/in/vitaliy-shestakov-67a9b0228" target="_blank" rel="noopener noreferrer"><svg class="icon" aria-hidden="true"><use href="#i-linkedin"/></svg><span>LinkedIn</span></a><a href="mailto:shestakovvitaliy87@gmail.com"><svg class="icon" aria-hidden="true"><use href="#i-mail"/></svg><span>Email</span></a>
+              </div>
+            </div>
+            <figure class="mobile-showcase" data-os="ios" aria-label="От идеи до приложения: четыре этапа Flutter-разработки" data-i18n-aria-label="demo.label">
+              <div class="showcase-orbit" aria-hidden="true">
+              </div>
+              <div class="showcase-orbit orbit-secondary" aria-hidden="true">
+              </div>
+              <div class="platform-picker" role="group" data-i18n-aria-label="demo.platforms" aria-label="Выбрать рамку: iOS, Android или Web" hidden>
+                <button type="button" data-platform="ios" aria-pressed="true">iOS</button><span class="platform-divider" aria-hidden="true"></span><button type="button" data-platform="android" aria-pressed="false">Android</button><span class="platform-divider" aria-hidden="true"></span><button type="button" data-platform="web" aria-pressed="false">Web</button>
+              </div>
+              <div class="device-depth" tabindex="0" role="group" data-i18n-aria-label="demo.rotateHint" aria-label="Повернуть макет: перетащите или используйте стрелки">
+                <div class="device-frame">
+                  <div class="window-chrome" aria-hidden="true">
+                    <span class="window-browser-controls"><i></i><i></i><i></i></span><span class="window-title" data-i18n="demo.windowTitle">Flutter / разработка</span>
+                  </div>
+                  <div class="device-island" aria-hidden="true">
+                  </div>
+                  <div class="device-camera" aria-hidden="true">
+                  </div>
+                  <div class="demo-app">
+                    <div class="preview-status" aria-hidden="true">
+                      <span>9:41</span><span class="preview-signals"><i></i><i></i><b></b></span>
+                    </div>
+                    <div class="preview-content">
+                      <div class="preview-topline">
+                        <span class="preview-mark">F<span>/</span></span><span class="preview-edition">FLUTTER / DEVELOPMENT</span><span class="preview-indicator" aria-hidden="true"></span>
+                      </div>
+                      <div class="preview-intro">
+                        <span class="preview-kicker" data-i18n="demo.kicker">МОЙ ПОДХОД</span>
+                        <h3 data-i18n="demo.title">От идеи
+до приложения.</h3>
+                        <p data-i18n="demo.statement">Продумываю детали. Довожу до релиза.</p>
+                      </div>
+                      <ol class="preview-steps">
+                        <li class="preview-step preview-step-1">
+                          <span class="preview-step-art" aria-hidden="true"><svg viewBox="0 0 64 56" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" focusable="false"><rect x="17" y="3" width="30" height="48" rx="7" fill="currentColor" opacity=".12"/><rect x="17" y="3" width="30" height="48" rx="7"/><path d="M27 9h10" opacity=".65"/><rect x="22" y="16" width="20" height="9" rx="2" fill="currentColor" opacity=".25" stroke="none"/><path d="M23 30h17M23 34h12" opacity=".6"/><rect x="22" y="39" width="20" height="6" rx="2" fill="currentColor" stroke="none"/></svg><span class="preview-step-number">01</span></span><span class="preview-step-copy"><strong data-i18n="demo.step1.title">Продумываю интерфейс</strong><span data-i18n="demo.step1.detail">Понятные экраны и сценарии</span></span>
+                        </li>
+                        <li class="preview-step preview-step-2">
+                          <span class="preview-step-art" aria-hidden="true"><svg viewBox="0 0 64 56" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" focusable="false"><path d="M22 28h8V13h10M30 28v15h10" opacity=".6"/><rect x="2" y="19" width="20" height="18" rx="5" fill="currentColor" opacity=".15" stroke="none"/><rect x="2" y="19" width="20" height="18" rx="5"/><rect x="40" y="4" width="21" height="18" rx="5" fill="currentColor" opacity=".15" stroke="none"/><rect x="40" y="4" width="21" height="18" rx="5"/><rect x="40" y="34" width="21" height="18" rx="5"/><path d="M8 26h8M8 30h5M46 11h9M46 15h6M46 41h9M46 45h6"/><circle cx="30" cy="28" r="3" fill="currentColor" stroke="none"/></svg><span class="preview-step-number">02</span></span><span class="preview-step-copy"><strong data-i18n="demo.step2.title">Выстраиваю логику</strong><span data-i18n="demo.step2.detail">Предсказуемое поведение</span></span>
+                        </li>
+                        <li class="preview-step preview-step-3">
+                          <span class="preview-step-art" aria-hidden="true"><svg viewBox="0 0 64 56" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" focusable="false"><rect x="3" y="10" width="18" height="36" rx="5" fill="currentColor" opacity=".12" stroke="none"/><rect x="3" y="10" width="18" height="36" rx="5"/><path d="M9 16h6M10 40h4"/><rect x="43" y="8" width="18" height="40" rx="4"/><path d="M43 21h18M43 34h18M25 21h13l-4-4M38 21l-4 4M38 35H25l4-4M25 35l4 4"/><circle cx="48" cy="15" r="1" fill="currentColor"/><circle cx="48" cy="28" r="1" fill="currentColor"/><circle cx="48" cy="41" r="1" fill="currentColor"/></svg><span class="preview-step-number">03</span></span><span class="preview-step-copy"><strong data-i18n="demo.step3.title">Подключаю сервисы</strong><span data-i18n="demo.step3.detail">Данные, API и обновления</span></span>
+                        </li>
+                        <li class="preview-step preview-step-4">
+                          <span class="preview-step-art" aria-hidden="true"><svg viewBox="0 0 64 56" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" focusable="false"><rect x="7" y="6" width="36" height="44" rx="6" fill="currentColor" opacity=".1" stroke="none"/><rect x="7" y="6" width="36" height="44" rx="6"/><path d="M14 14h22M14 22h14M14 27h9" opacity=".6"/><rect x="14" y="35" width="15" height="7" rx="2" fill="currentColor" opacity=".3" stroke="none"/><circle cx="46" cy="35" r="14" fill="var(--preview-success-disc)"/><circle cx="46" cy="35" r="14"/><path d="M39 35l5 5 9-10" stroke-width="2.5"/></svg><span class="preview-step-number">04</span></span><span class="preview-step-copy"><strong data-i18n="demo.step4.title">Готовлю к запуску</strong><span data-i18n="demo.step4.detail">Проверка и публикация</span><span class="preview-release-line"><span class="preview-release-target" data-target="ios">App Store</span><span class="preview-release-target" data-target="android">Google Play</span><span class="preview-release-target" data-target="web">Web</span></span></span>
+                        </li>
+                      </ol>
+                      <div class="preview-footer">
+                        <span>Flutter · Dart</span>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="device-home" aria-hidden="true">
+                  </div>
+                </div>
+              </div>
+            </figure>
+          </div>
+        </div>
+      </section>
+      <div class="proof-strip">
+        <div class="container">
+          <div class="proof-heading">
+            <p data-i18n="productsLabel" >Продукты, с которыми работал</p>
+            <button class="motion-toggle icon-button" type="button" data-i18n-aria-label="animation.pause" aria-label="Приостановить анимации" aria-pressed="false" hidden><svg class="icon" aria-hidden="true"><use href="#i-pause"/></svg></button>
+          </div>
+          <div class="company-marquee">
+            <div class="company-track">
+              <div class="company-group">
+                <span>CRTEX</span><span>Citadel.one</span><span>Tayyab</span><span>Beauty Agent</span><span>ОТИС</span>
+              </div>
+              <div class="company-group" aria-hidden="true">
+                <span>CRTEX</span><span>Citadel.one</span><span>Tayyab</span><span>Beauty Agent</span><span>ОТИС</span>
+              </div>
+            </div>
+          </div>
+        </div>
       </div>
-    </section>
-
-    <div class="container"><div class="facts"><div><strong>5+</strong><span>лет в разработке</span></div><div><strong>4</strong><span>платформы на Flutter</span></div><div><strong>Полный цикл</strong><span>от требований до публикации</span></div><div><strong>Командная работа</strong><span>code review · планирование · найм</span></div></div></div>
-
-    <section class="section container" id="projects" aria-labelledby="projects-title">
-      <div class="section-heading"><div><p class="overline">01 / Практика</p><h2 id="projects-title">Над чем я работал<span class="accent">.</span></h2></div><p class="section-note">Разные продукты.<br>Один подход к качеству.</p></div>
-      <div class="project-grid">
-        <article class="project">
-          <div class="project-art terra-art" aria-hidden="true"><div class="project-art-label">COMMUNITY / MOBILE + WEB</div><div class="terra-symbol">t<span>↗</span></div><div class="art-tags"><span>Мероприятия</span><span>Образование</span><span>Сообщество</span></div></div>
-          <div class="project-body"><div class="project-meta"><span>2023 — настоящее время</span><span>iOS / Android / Web</span></div><h3>Terra Club <span class="project-number">/ 01</span></h3><p>Приложение сообщества: личный кабинет, мероприятия, волонтёрство, наставничество и образовательные направления.</p><div class="tags"><span>Flutter</span><span>BLoC</span><span>REST API</span><span>WebSocket</span></div><details><summary>Мой вклад <span aria-hidden="true">+</span></summary><ul><li>Участие в полном цикле: требования, архитектура, разработка, тестирование и релизы.</li><li>Адаптивные интерфейсы, авторизация, профиль, каталоги мероприятий и запись на активности.</li><li>Разделение UI, бизнес-логики, репозиториев, сетевого и локального слоёв.</li><li>Технические решения, code review, координация команды и технические собеседования.</li></ul><a class="inline-link" href="https://club-terra.ru/" target="_blank" rel="noopener noreferrer">Сайт компании ↗</a></details></div>
-        </article>
-        <article class="project">
-          <div class="project-art citadel-art" aria-hidden="true"><div class="project-art-label">WEB3 / MOBILE</div><div class="orbital"><i></i><i></i><i></i><span>C<span>·</span></span></div><div class="art-tags"><span>WalletConnect</span><span>DApps</span><span>Транзакции</span></div></div>
-          <div class="project-body"><div class="project-meta"><span>2022 — 2023</span><span>iOS / Android</span></div><h3>Citadel.one <span class="project-number">/ 02</span></h3><p>Криптовалютный кошелёк: подключение к Web3-приложениям, интеграции с DApps и работа с транзакциями.</p><div class="tags"><span>Flutter</span><span>WalletConnect</span><span>Web3</span><span>API</span></div><details><summary>Мой вклад <span aria-hidden="true">+</span></summary><ul><li>Интеграция WalletConnect для подключения к Web3-приложениям.</li><li>Добавление и поддержка интеграций с децентрализованными приложениями.</li><li>Работа с API: балансы, отправка и получение токенов.</li><li>Обработка состояний загрузки, ошибок и статусов транзакций; согласование изменений API.</li></ul><a class="inline-link" href="https://citadel.one/" target="_blank" rel="noopener noreferrer">Сайт компании ↗</a></details></div>
-        </article>
+      <section class="achievement-section" id="achievements" aria-labelledby="achievements-title">
+        <h2 class="sr-only" id="achievements-title" data-i18n="achievements.title">Результаты в цифрах</h2>
+        <dl class="achievement-grid">
+          <div class="achievement">
+            <dt class="achievement-value">5<sup>+</sup></dt>
+            <dd class="achievement-label"><span data-i18n="achievements.experience">лет коммерческой Flutter-разработки</span><span class="achievement-note" data-i18n="achievements.since">С 2021 года</span></dd>
+          </div>
+          <div class="achievement">
+            <dt class="achievement-value">60<sup>+</sup></dt>
+            <dd class="achievement-label" data-i18n="achievements.releases">production-релизов</dd>
+          </div>
+          <div class="achievement">
+            <dt class="achievement-value">50<sup>+</sup></dt>
+            <dd class="achievement-label" data-i18n="achievements.interviews">проведённых технических собеседований</dd>
+          </div>
+          <div class="achievement">
+            <dt class="achievement-value">3</dt>
+            <dd class="achievement-label"><span data-i18n="achievements.platforms">платформы</span><span class="achievement-platforms">iOS · Android · Web</span></dd>
+          </div>
+        </dl>
+      </section>
+      <section class="section container" id="projects" aria-labelledby="projects-title">
+        <div class="section-heading">
+          <div>
+            <p class="eyebrow section-index"><span data-i18n="workEyebrow" >Проекты</span></p>
+            <h2 data-i18n="workTitle" id="projects-title">Приложения для сообществ,
+финтеха и бизнеса.</h2>
+          </div>
+          <p data-i18n="workIntro" class="section-intro">Назначение продукта, платформы и технический стек. Подробности моей работы — в профессиональном опыте.</p>
+        </div>
+        <div class="project-grid">
+          <article class="project-card featured" id="project-terra">
+            <div class="case-art store-cover store-cover-terra">
+              <a class="store-visual" href="assets/apps/terra-03.webp" data-gallery="terra" data-gallery-index="0" aria-haspopup="dialog" data-i18n-aria-label="screenshot.terra.0" aria-label="Terra Club: расписание мероприятий и запись на активности">
+              <div class="store-visual-copy">
+                <span class="store-visual-brand"><img src="assets/apps/crtex-logo.svg" alt="" width="28" height="28" loading="lazy" decoding="async"><span>CRTEX</span></span><span class="store-visual-eyebrow" data-i18n="cover.terra.eyebrow">СООБЩЕСТВО И ОБУЧЕНИЕ</span><strong class="store-visual-title" data-i18n="cover.terra.title">События.
+Обучение.</strong><span class="store-visual-detail" data-i18n="cover.terra.detail">Бизнес-сообщество в одном приложении</span>
+              </div>
+              <span class="store-visual-media"><span class="store-visual-image store-visual-image-back"><img src="assets/apps/screens/terra-schools.svg" alt="" width="414" height="900" loading="eager" decoding="async"></span><span class="store-visual-image store-visual-image-front"><img src="assets/apps/screens/terra-events.svg" alt="" width="414" height="900" loading="eager" decoding="async"></span></span></a>
+            </div>
+            <div class="case-body">
+              <div class="case-category">
+                <span data-i18n="project.terra.sector" >Сообщество и образование</span><span>iOS · Android · Web</span>
+              </div>
+              <div class="case-title">
+                <h3 data-i18n="project.terra.name" >CRTEX</h3>
+              </div>
+              <p data-i18n="project.terra.description" class="case-description">Экосистема сообщества в одном приложении: от мероприятий и обучения до волонтёрства и наставничества.</p>
+              <div class="case-stack">
+                <p class="case-stack-label"><span data-i18n="case.stack" >Технологии и интеграции</span></p>
+                <div class="tags">
+                  <span>Flutter</span><span>Dart</span><span>BLoC</span><span>REST API</span><span>WebSocket</span>
+                </div>
+              </div>
+              <div class="project-footer">
+                <div class="case-store-links">
+                  <a class="case-store" href="https://play.google.com/store/apps/details?id=com.club.terra" target="_blank" rel="noopener noreferrer">Google Play <svg class="icon" aria-hidden="true"><use href="#i-arrow"/></svg></a><a class="case-store" href="https://apps.apple.com/ru/app/terra-core/id6467891028" target="_blank" rel="noopener noreferrer">App Store <svg class="icon" aria-hidden="true"><use href="#i-arrow"/></svg></a><a class="case-store case-website" href="https://club-terra.ru/" target="_blank" rel="noopener noreferrer"><span data-i18n="case.website">Сайт проекта</span><svg class="icon" aria-hidden="true"><use href="#i-arrow"/></svg></a>
+                </div>
+                <a class="case-experience" href="#experience-terra" data-experience-link><span data-i18n="case.experience" >Моя роль и задачи</span><span class="case-action-icon"><svg class="icon" aria-hidden="true"><use href="#i-down"/></svg></span></a>
+              </div>
+            </div>
+          </article>
+          <article class="project-card featured" id="project-citadel">
+            <div class="case-art store-cover store-cover-citadel">
+              <a class="store-visual" href="assets/apps/citadel-03.webp" data-gallery="citadel" data-gallery-index="1" aria-haspopup="dialog" data-i18n-aria-label="screenshot.citadel.1" aria-label="Citadel.one: стейкинг и вознаграждения">
+              <div class="store-visual-copy">
+                <span class="store-visual-brand"><img src="assets/apps/citadel-icon.webp" alt="" width="28" height="28" loading="lazy" decoding="async"><span>Citadel.one</span></span><span class="store-visual-eyebrow" data-i18n="cover.citadel.eyebrow">КОШЕЛЁК И WEB3</span><strong class="store-visual-title" data-i18n="cover.citadel.title">Кошелёк
+для Web3.</strong><span class="store-visual-detail" data-i18n="cover.citadel.detail">Активы · DApps · транзакции</span>
+              </div>
+              <span class="store-visual-media"><span class="store-visual-image store-visual-image-back"><img src="assets/apps/screens/citadel-wallet.svg" alt="" width="414" height="900" loading="eager" decoding="async"></span><span class="store-visual-image store-visual-image-front"><img src="assets/apps/screens/citadel-staking.svg" alt="" width="414" height="900" loading="eager" decoding="async"></span></span></a>
+            </div>
+            <div class="case-body">
+              <div class="case-category">
+                <span data-i18n="project.citadel.sector" >Криптовалютный кошелёк</span><span>iOS · Android</span>
+              </div>
+              <div class="case-title">
+                <h3 data-i18n="project.citadel.name" >Citadel.one</h3>
+              </div>
+              <p data-i18n="project.citadel.description" class="case-description">Мобильный кошелёк с доступом к Web3: подключение DApps, работа с балансами и криптовалютными транзакциями.</p>
+              <div class="case-stack">
+                <p class="case-stack-label"><span data-i18n="case.stack" >Технологии и интеграции</span></p>
+                <div class="tags">
+                  <span>Flutter</span><span>Dart</span><span>WalletConnect</span><span>DApps</span><span>Web3</span><span>Crypto APIs</span>
+                </div>
+              </div>
+              <div class="project-footer">
+                <div class="case-store-links">
+                  <a class="case-store" href="https://play.google.com/store/apps/details?id=one.citadel.mobile" target="_blank" rel="noopener noreferrer">Google Play <svg class="icon" aria-hidden="true"><use href="#i-arrow"/></svg></a><a class="case-store" href="https://apps.apple.com/app/citadel-one/id1546701475" target="_blank" rel="noopener noreferrer">App Store <svg class="icon" aria-hidden="true"><use href="#i-arrow"/></svg></a><a class="case-store case-website" href="https://citadel.one/" target="_blank" rel="noopener noreferrer"><span data-i18n="case.website">Сайт проекта</span><svg class="icon" aria-hidden="true"><use href="#i-arrow"/></svg></a>
+                </div>
+                <a class="case-experience" href="#experience-citadel" data-experience-link><span data-i18n="case.experience" >Моя роль и задачи</span><span class="case-action-icon"><svg class="icon" aria-hidden="true"><use href="#i-down"/></svg></span></a>
+              </div>
+            </div>
+          </article>
+          <article class="project-card compact" id="project-tayyab">
+            <div class="case-art store-cover store-cover-tayyab">
+              <a class="store-visual" href="assets/apps/tayyab-02.webp" data-gallery="tayyab" data-gallery-index="0" aria-haspopup="dialog" data-i18n-aria-label="screenshot.tayyab.0" aria-label="Tayyab: цифровая карта, платежи и выписка по операциям">
+              <div class="store-visual-copy">
+                <span class="store-visual-brand"><img src="assets/apps/tayyab-icon.webp" alt="" width="28" height="28" loading="lazy" decoding="async"><span>Tayyab</span></span><span class="store-visual-eyebrow" data-i18n="cover.tayyab.eyebrow">ЦИФРОВЫЕ ФИНАНСЫ</span><strong class="store-visual-title" data-i18n="cover.tayyab.title">Карты.
+Переводы.</strong><span class="store-visual-detail" data-i18n="cover.tayyab.detail">Финансовый сервис для повседневных задач</span>
+              </div>
+              <span class="store-visual-media"><span class="store-visual-image store-visual-image-back"><img src="assets/apps/screens/tayyab-sadaqah.svg" alt="" width="414" height="900" loading="lazy" decoding="async"></span><span class="store-visual-image store-visual-image-front"><img src="assets/apps/screens/tayyab-card.svg" alt="" width="414" height="900" loading="lazy" decoding="async"></span></span></a>
+            </div>
+            <div class="case-body">
+              <div class="case-category">
+                <span data-i18n="project.tayyab.sector" >Цифровые финансы</span><span>iOS · Android</span>
+              </div>
+              <div class="case-title">
+                <h3 data-i18n="project.tayyab.name" >Tayyab</h3>
+              </div>
+              <p data-i18n="project.tayyab.description" class="case-description">Исламский финансовый сервис в Казахстане: переводы, история операций, виртуальные и физические карты.</p>
+              <div class="case-stack">
+                <p class="case-stack-label"><span data-i18n="case.stack" >Технологии и интеграции</span></p>
+                <div class="tags">
+                  <span>Flutter</span><span>Dart</span><span>REST API</span><span data-i18n="tech.cards" >Платёжные сценарии</span>
+                </div>
+              </div>
+              <div class="project-footer">
+                <div class="case-store-links">
+                  <a class="case-store" href="https://play.google.com/store/apps/details?id=co.tayyab.app" target="_blank" rel="noopener noreferrer">Google Play <svg class="icon" aria-hidden="true"><use href="#i-arrow"/></svg></a><a class="case-store" href="https://apps.apple.com/kz/app/tayyab/id1562092088" target="_blank" rel="noopener noreferrer">App Store <svg class="icon" aria-hidden="true"><use href="#i-arrow"/></svg></a><a class="case-store case-website" href="https://tayyab.kz/" target="_blank" rel="noopener noreferrer"><span data-i18n="case.website">Сайт проекта</span><svg class="icon" aria-hidden="true"><use href="#i-arrow"/></svg></a>
+                </div>
+                <a class="case-experience" href="#experience-tayyab" data-experience-link><span data-i18n="case.experience" >Моя роль и задачи</span><span class="case-action-icon"><svg class="icon" aria-hidden="true"><use href="#i-down"/></svg></span></a>
+              </div>
+            </div>
+          </article>
+          <article class="project-card compact" id="project-beauty">
+            <div class="case-art store-cover store-cover-beauty">
+              <a class="store-visual" href="assets/apps/beauty-01.webp" data-gallery="beauty" data-gallery-index="0" aria-haspopup="dialog" data-i18n-aria-label="screenshot.beauty.0" aria-label="Beauty Agent: расписание мастера и записи клиентов">
+              <div class="store-visual-copy">
+                <span class="store-visual-brand"><img src="assets/apps/beauty-icon.webp" alt="" width="28" height="28" loading="lazy" decoding="async"><span>Beauty Agent</span></span><span class="store-visual-eyebrow" data-i18n="cover.beauty.eyebrow">СЕРВИС ДЛЯ МАСТЕРОВ</span><strong class="store-visual-title" data-i18n="cover.beauty.title">Запись
+клиентов.</strong><span class="store-visual-detail" data-i18n="cover.beauty.detail">Запись и управление рабочим днём</span>
+              </div>
+              <span class="store-visual-media"><span class="store-visual-image store-visual-image-back"><img src="assets/apps/screens/beauty-assistant.svg" alt="" width="414" height="900" loading="lazy" decoding="async"></span><span class="store-visual-image store-visual-image-front"><img src="assets/apps/screens/beauty-calendar.svg" alt="" width="414" height="900" loading="lazy" decoding="async"></span></span></a>
+            </div>
+            <div class="case-body">
+              <div class="case-category">
+                <span data-i18n="project.beauty.sector" >Сервисы для мастеров</span><span>iOS · Android</span>
+              </div>
+              <div class="case-title">
+                <h3 data-i18n="project.beauty.name" >Beauty Agent</h3>
+              </div>
+              <p data-i18n="project.beauty.description" class="case-description">Рабочее пространство мастера: клиентская база, расписание, управление записями и связь с клиентами.</p>
+              <div class="case-stack">
+                <p class="case-stack-label"><span data-i18n="case.stack" >Технологии и интеграции</span></p>
+                <div class="tags">
+                  <span>Flutter</span><span>Dart</span><span data-i18n="tech.auth" >Авторизация</span><span data-i18n="tech.push" >Push-уведомления</span><span data-i18n="tech.localization" >Локализация</span>
+                </div>
+              </div>
+              <div class="project-footer">
+                <div class="case-store-links">
+                  <a class="case-store" href="https://play.google.com/store/apps/details?id=com.beautyagent" target="_blank" rel="noopener noreferrer">Google Play <svg class="icon" aria-hidden="true"><use href="#i-arrow"/></svg></a><a class="case-store" href="https://apps.apple.com/ru/app/beauty-agent-%D0%B7%D0%B0%D0%BF%D0%B8%D1%81%D1%8C-%D0%BA%D0%BB%D0%B8%D0%B5%D0%BD%D1%82%D0%BE%D0%B2/id1451215026" target="_blank" rel="noopener noreferrer">App Store <svg class="icon" aria-hidden="true"><use href="#i-arrow"/></svg></a><a class="case-store case-website" href="https://app.beautyagent.ru/" target="_blank" rel="noopener noreferrer"><span data-i18n="case.website">Сайт проекта</span><svg class="icon" aria-hidden="true"><use href="#i-arrow"/></svg></a>
+                </div>
+                <a class="case-experience" href="#experience-beauty" data-experience-link><span data-i18n="case.experience" >Моя роль и задачи</span><span class="case-action-icon"><svg class="icon" aria-hidden="true"><use href="#i-down"/></svg></span></a>
+              </div>
+            </div>
+          </article>
+          <article class="project-card compact" id="project-otis">
+            <div class="case-art store-cover store-cover-otis">
+              <a class="store-visual" href="assets/apps/otis-01.webp" data-gallery="otis" data-gallery-index="0" aria-haspopup="dialog" data-i18n-aria-label="screenshot.otis.0" aria-label="OTIS Security: объекты охраны и главная страница">
+              <div class="store-visual-copy">
+                <span class="store-visual-brand"><img src="assets/apps/otis-icon.webp" alt="" width="28" height="28" loading="lazy" decoding="async"><span>OTIS Security</span></span><span class="store-visual-eyebrow" data-i18n="cover.otis.eyebrow">ОХРАННЫЙ СЕРВИС</span><strong class="store-visual-title" data-i18n="cover.otis.title">Объекты
+под охраной.</strong><span class="store-visual-detail" data-i18n="cover.otis.detail">Статусы · события · обращения</span>
+              </div>
+              <span class="store-visual-media"><span class="store-visual-image store-visual-image-back"><img src="assets/apps/screens/otis-objects.svg" alt="" width="414" height="900" loading="lazy" decoding="async"></span><span class="store-visual-image store-visual-image-front"><img src="assets/apps/screens/otis-home.svg" alt="" width="414" height="900" loading="lazy" decoding="async"></span></span></a>
+            </div>
+            <div class="case-body">
+              <div class="case-category">
+                <span data-i18n="project.otis.sector" >Безопасность и геолокация</span><span>iOS · Android</span>
+              </div>
+              <div class="case-title">
+                <h3 data-i18n="project.otis.name" >ОТИС</h3>
+              </div>
+              <p data-i18n="project.otis.description" class="case-description">Внутреннее приложение групп быстрого реагирования: объекты на карте, геолокация и события в реальном времени.</p>
+              <div class="case-stack">
+                <p class="case-stack-label"><span data-i18n="case.stack" >Технологии и интеграции</span></p>
+                <div class="tags">
+                  <span>Flutter</span><span>Dart</span><span>Google Maps</span><span>WebSocket</span><span data-i18n="tech.geolocation" >Геолокация</span><span data-i18n="tech.auth" >Авторизация</span>
+                </div>
+              </div>
+              <div class="project-footer">
+                <div class="case-store-links">
+                  <a class="case-store" href="https://play.google.com/store/apps/details?id=kz.otisdevteam.otis_security" target="_blank" rel="noopener noreferrer">Google Play <svg class="icon" aria-hidden="true"><use href="#i-arrow"/></svg></a><a class="case-store" href="https://apps.apple.com/ru/app/otis-security/id6443658534" target="_blank" rel="noopener noreferrer">App Store <svg class="icon" aria-hidden="true"><use href="#i-arrow"/></svg></a><a class="case-store case-website" href="https://www.otis.kz/" target="_blank" rel="noopener noreferrer"><span data-i18n="case.website">Сайт проекта</span><svg class="icon" aria-hidden="true"><use href="#i-arrow"/></svg></a>
+                </div>
+                <a class="case-experience" href="#experience-otis" data-experience-link><span data-i18n="case.experience" >Моя роль и задачи</span><span class="case-action-icon"><svg class="icon" aria-hidden="true"><use href="#i-down"/></svg></span></a>
+              </div>
+            </div>
+          </article>
+        </div>
+      </section>
+      <section class="section container" id="experience" aria-labelledby="experience-title">
+        <div class="experience-layout">
+          <div class="experience-aside">
+            <p class="eyebrow section-index"><span data-i18n="experienceEyebrow" >Профессиональный путь</span></p>
+            <h2 data-i18n="experienceTitle" id="experience-title">Опыт, решения
+и ответственность.</h2>
+            <p data-i18n="experienceIntro" class="section-intro">С 2021 года — мобильные продукты, интеграции и релизы. Опыт разработки приложений для сообществ, финтеха и бизнеса.</p>
+            <a class="button button-secondary career-resume" href="resume.pdf" data-resume-link hreflang="ru" target="_blank" rel="noopener"><span data-i18n="career.resume" >Полное резюме · PDF</span><svg class="icon" aria-hidden="true"><use href="#i-down"/></svg></a>
+          </div>
+          <div class="timeline">
+            <div class="timeline-track" aria-hidden="true">
+              <span class="timeline-fill"></span>
+            </div>
+            <article class="timeline-item" id="experience-terra">
+              <span class="timeline-marker" aria-hidden="true"></span>
+              <div class="timeline-card">
+                <div class="timeline-top">
+                  <h3 id="experience-terra-title"><span data-i18n="career.company.terra">CRTEX</span></h3>
+                </div>
+                <p class="timeline-date"><time datetime="2023-10"><span data-i18n="period.terra.start" >Октябрь 2023</span></time><span class="date-dash" aria-hidden="true">—</span><span><time datetime="2026-11" data-i18n="period.terra.end">Ноябрь 2026</time></span></p>
+                <p class="timeline-role">Senior Flutter Developer · iOS / Android / Web</p>
+                <p data-i18n="career.subtitle.terra" class="timeline-summary">Три продукта Terra с нуля, перенос в Web и развитие Flutter-команды.</p>
+                <details class="contribution" open><summary class="contribution-summary"><span class="contribution-heading"><span class="contribution-symbol"><svg class="icon" aria-hidden="true"><use href="#i-layers"/></svg></span><span class="contribution-heading-copy"><span data-i18n="career.contribution" class="contribution-title">Мой вклад</span><span data-i18n="contribution.preview.terra" class="contribution-preview">Продукты, архитектура и релизы</span></span></span><span class="contribution-action"><span data-i18n="contribution.expand" class="contribution-label-expand">Подробнее</span><span data-i18n="contribution.collapse" class="contribution-label-collapse">Свернуть</span><span class="contribution-chevron"><svg class="icon" aria-hidden="true"><use href="#i-chevron"/></svg></span></span></summary>
+                <div class="contribution-body">
+                  <ul class="contribution-grid">
+                    <li>
+                      <span class="contribution-topic"><span class="contribution-item-symbol"><svg class="icon" aria-hidden="true"><use href="#i-layers"/></svg></span><span data-i18n="focus.terra.0">Три продукта с нуля</span></span>
+                      <p data-i18n="project.terra.bullet0">Создал и вывел в production приложение Terra для iOS и Android, Terra Admin и форму регистрации на мероприятия.</p>
+                    </li>
+                    <li>
+                      <span class="contribution-topic"><span class="contribution-item-symbol"><svg class="icon" aria-hidden="true"><use href="#i-code"/></svg></span><span data-i18n="focus.terra.1">Архитектура</span></span>
+                      <p data-i18n="project.terra.bullet1">Спроектировал модульную архитектуру: Clean Architecture, BLoC, DI, Repository и Domain / Data / Presentation. Обеспечил переиспользование бизнес-логики между платформами.</p>
+                    </li>
+                    <li>
+                      <span class="contribution-topic"><span class="contribution-item-symbol"><svg class="icon" aria-hidden="true"><use href="#i-globe"/></svg></span><span data-i18n="focus.terra.2">Web и realtime</span></span>
+                      <p data-i18n="project.terra.bullet2">Полностью перенёс Terra в Web. Доработал REST/WebSocket, восстановление связи и синхронизацию; добавил кэширование и пагинацию, сократил лишние запросы и перестроения виджетов.</p>
+                    </li>
+                    <li>
+                      <span class="contribution-topic"><span class="contribution-item-symbol"><svg class="icon" aria-hidden="true"><use href="#i-users"/></svg></span><span data-i18n="focus.terra.3">Массовые запуски</span></span>
+                      <p data-i18n="project.terra.bullet3">Разработал административные инструменты и регистрацию для запусков наставничества, собиравших 5 000+ участников за один день.</p>
+                    </li>
+                    <li>
+                      <span class="contribution-topic"><span class="contribution-item-symbol"><svg class="icon" aria-hidden="true"><use href="#i-check"/></svg></span><span data-i18n="focus.terra.4">Релизы и стабильность</span></span>
+                      <p data-i18n="project.terra.bullet4">Настроил диагностику и выпуск обновлений: 60+ production-релизов, crash-free sessions на уровне 99,95%.</p>
+                    </li>
+                    <li>
+                      <span class="contribution-topic"><span class="contribution-item-symbol"><svg class="icon" aria-hidden="true"><use href="#i-users"/></svg></span><span data-i18n="focus.terra.5">Команда и ИИ-инструменты</span></span>
+                      <p data-i18n="project.terra.bullet5">Провёл 50+ технических собеседований, усилил Flutter-команду и проводил code review. С начала 2026 года внедрял ИИ-агентов, проектные правила и RAG-базу с обязательной проверкой изменений.</p>
+                    </li>
+                  </ul>
+                </div>
+                </details>
+<a class="timeline-product-link" href="#project-terra"><span data-i18n="career.backToProject" >Посмотреть продукт</span><svg class="icon" aria-hidden="true"><use href="#i-arrow"/></svg></a>
+              </div>
+            </article>
+            <article class="timeline-item " id="experience-citadel">
+              <span class="timeline-marker" aria-hidden="true"></span>
+              <div class="timeline-card">
+                <div class="timeline-top">
+                  <h3 id="experience-citadel-title"><span data-i18n="project.citadel.name" >Citadel.one</span></h3>
+                </div>
+                <p class="timeline-date"><time datetime="2022-08"><span data-i18n="period.citadel.start" >Август 2022</span></time><span class="date-dash" aria-hidden="true">—</span><span><span data-i18n="period.citadel.end" >Сентябрь 2023</span></span></p>
+                <p class="timeline-role">Flutter Developer · iOS / Android</p>
+                <p data-i18n="career.subtitle.citadel" class="timeline-summary">Web3-интеграции и цифровые активы: кошелёк для iOS и Android, 40 блокчейн-сетей.</p>
+                <details class="contribution" ><summary class="contribution-summary"><span class="contribution-heading"><span class="contribution-symbol"><svg class="icon" aria-hidden="true"><use href="#i-code"/></svg></span><span class="contribution-heading-copy"><span data-i18n="career.contribution" class="contribution-title">Мой вклад</span><span data-i18n="contribution.preview.citadel" class="contribution-preview">Web3, интеграции и транзакции</span></span></span><span class="contribution-action"><span data-i18n="contribution.expand" class="contribution-label-expand">Подробнее</span><span data-i18n="contribution.collapse" class="contribution-label-collapse">Свернуть</span><span class="contribution-chevron"><svg class="icon" aria-hidden="true"><use href="#i-chevron"/></svg></span></span></summary>
+                <div class="contribution-body">
+                  <ul class="contribution-grid">
+                    <li>
+                      <span class="contribution-topic"><span class="contribution-item-symbol"><svg class="icon" aria-hidden="true"><use href="#i-code"/></svg></span><span data-i18n="focus.citadel.0" >WalletConnect</span></span>
+                      <p data-i18n="project.citadel.bullet0" >Интегрировал WalletConnect для подключения кошелька к Web3-приложениям и подтверждения операций.</p>
+                    </li>
+                    <li>
+                      <span class="contribution-topic"><span class="contribution-item-symbol"><svg class="icon" aria-hidden="true"><use href="#i-layers"/></svg></span><span data-i18n="focus.citadel.1" >DApps</span></span>
+                      <p data-i18n="project.citadel.bullet1" >Подключал DApps через WebView и JavaScript bridge: передача данных кошелька, обработка запросов и подтверждение транзакций.</p>
+                    </li>
+                    <li>
+                      <span class="contribution-topic"><span class="contribution-item-symbol"><svg class="icon" aria-hidden="true"><use href="#i-phone"/></svg></span><span data-i18n="focus.citadel.2" >Транзакции</span></span>
+                      <p data-i18n="project.citadel.bullet2" >Разрабатывал отправку и получение токенов, отображение балансов и истории операций; работал с криптовалютными API разных сетей.</p>
+                    </li>
+                    <li>
+                      <span class="contribution-topic"><span class="contribution-item-symbol"><svg class="icon" aria-hidden="true"><use href="#i-check"/></svg></span><span data-i18n="focus.citadel.3" >Состояния и API</span></span>
+                      <p data-i18n="project.citadel.bullet3" >Синхронизировал интерфейс с состояниями транзакций и обрабатывал ошибки. Работал с BLoC/Cubit, get_it, Repository, Use Cases, RxDart и built_value.</p>
+                    </li>
+                  </ul>
+                </div>
+                </details>
+<a class="timeline-product-link" href="#project-citadel"><span data-i18n="career.backToProject" >Посмотреть продукт</span><svg class="icon" aria-hidden="true"><use href="#i-arrow"/></svg></a>
+              </div>
+            </article>
+            <article class="timeline-item " id="experience-tayyab">
+              <span class="timeline-marker" aria-hidden="true"></span>
+              <div class="timeline-card">
+                <div class="timeline-top">
+                  <h3 id="experience-tayyab-title"><span data-i18n="project.tayyab.name" >Tayyab</span></h3>
+                </div>
+                <p class="timeline-date"><time datetime="2022-06"><span data-i18n="period.tayyab.start" >Июнь 2022</span></time><span class="date-dash" aria-hidden="true">—</span><span><span data-i18n="period.tayyab.end" >Август 2022</span></span></p>
+                <p class="timeline-role">Flutter Developer · iOS / Android</p>
+                <p data-i18n="career.subtitle.tayyab" class="timeline-summary">Платёжные сценарии, банковские карты и качество интерфейсов.</p>
+                <details class="contribution" ><summary class="contribution-summary"><span class="contribution-heading"><span class="contribution-symbol"><svg class="icon" aria-hidden="true"><use href="#i-phone"/></svg></span><span class="contribution-heading-copy"><span data-i18n="career.contribution" class="contribution-title">Мой вклад</span><span data-i18n="contribution.preview.tayyab" class="contribution-preview">Платежи, карты и качество кода</span></span></span><span class="contribution-action"><span data-i18n="contribution.expand" class="contribution-label-expand">Подробнее</span><span data-i18n="contribution.collapse" class="contribution-label-collapse">Свернуть</span><span class="contribution-chevron"><svg class="icon" aria-hidden="true"><use href="#i-chevron"/></svg></span></span></summary>
+                <div class="contribution-body">
+                  <ul class="contribution-grid">
+                    <li>
+                      <span class="contribution-topic"><span class="contribution-item-symbol"><svg class="icon" aria-hidden="true"><use href="#i-phone"/></svg></span><span data-i18n="focus.tayyab.0" >Переводы</span></span>
+                      <p data-i18n="project.tayyab.bullet0" >Реализовал 3 ключевых раздела: денежные переводы, выписки по счетам и историю операций.</p>
+                    </li>
+                    <li>
+                      <span class="contribution-topic"><span class="contribution-item-symbol"><svg class="icon" aria-hidden="true"><use href="#i-layers"/></svg></span><span data-i18n="focus.tayyab.1" >Банковские карты</span></span>
+                      <p data-i18n="project.tayyab.bullet1" >Поддерживал выпуск и активацию виртуальных и физических карт, дорабатывал платёжные сценарии.</p>
+                    </li>
+                    <li>
+                      <span class="contribution-topic"><span class="contribution-item-symbol"><svg class="icon" aria-hidden="true"><use href="#i-code"/></svg></span><span data-i18n="focus.tayyab.2" >Качество кода</span></span>
+                      <p data-i18n="project.tayyab.bullet2" >Исправлял критические ошибки, проводил рефакторинг и улучшал архитектуру приложения.</p>
+                    </li>
+                    <li>
+                      <span class="contribution-topic"><span class="contribution-item-symbol"><svg class="icon" aria-hidden="true"><use href="#i-check"/></svg></span><span data-i18n="focus.tayyab.3" >Интерфейсы</span></span>
+                      <p data-i18n="project.tayyab.bullet3" >Предлагал решения по UX/UI платёжных экранов, адаптивности и доступности интерфейсов с учётом пользовательского опыта.</p>
+                    </li>
+                  </ul>
+                </div>
+                </details>
+<a class="timeline-product-link" href="#project-tayyab"><span data-i18n="career.backToProject" >Посмотреть продукт</span><svg class="icon" aria-hidden="true"><use href="#i-arrow"/></svg></a>
+              </div>
+            </article>
+            <article class="timeline-item " id="experience-beauty">
+              <span class="timeline-marker" aria-hidden="true"></span>
+              <div class="timeline-card">
+                <div class="timeline-top">
+                  <h3 id="experience-beauty-title"><span data-i18n="project.beauty.name" >Beauty Agent</span></h3>
+                </div>
+                <p class="timeline-date"><time datetime="2022-04"><span data-i18n="period.beauty.start" >Апрель 2022</span></time><span class="date-dash" aria-hidden="true">—</span><span><span data-i18n="period.beauty.end" >Июнь 2022</span></span></p>
+                <p class="timeline-role">Flutter Developer · iOS / Android</p>
+                <p data-i18n="career.subtitle.beauty" class="timeline-summary">Клиентская база, расписание и повседневная работа мастера.</p>
+                <details class="contribution" ><summary class="contribution-summary"><span class="contribution-heading"><span class="contribution-symbol"><svg class="icon" aria-hidden="true"><use href="#i-users"/></svg></span><span class="contribution-heading-copy"><span data-i18n="career.contribution" class="contribution-title">Мой вклад</span><span data-i18n="contribution.preview.beauty" class="contribution-preview">Клиенты, расписание и уведомления</span></span></span><span class="contribution-action"><span data-i18n="contribution.expand" class="contribution-label-expand">Подробнее</span><span data-i18n="contribution.collapse" class="contribution-label-collapse">Свернуть</span><span class="contribution-chevron"><svg class="icon" aria-hidden="true"><use href="#i-chevron"/></svg></span></span></summary>
+                <div class="contribution-body">
+                  <ul class="contribution-grid">
+                    <li>
+                      <span class="contribution-topic"><span class="contribution-item-symbol"><svg class="icon" aria-hidden="true"><use href="#i-users"/></svg></span><span data-i18n="focus.beauty.0" >Клиентская база</span></span>
+                      <p data-i18n="project.beauty.bullet0" >Реализовал карточки клиентов: создание, редактирование и просмотр данных.</p>
+                    </li>
+                    <li>
+                      <span class="contribution-topic"><span class="contribution-item-symbol"><svg class="icon" aria-hidden="true"><use href="#i-calendar"/></svg></span><span data-i18n="focus.beauty.1" >Расписание</span></span>
+                      <p data-i18n="project.beauty.bullet1" >Разработал расписание мастера и управление записями на приём, связав их с клиентской базой.</p>
+                    </li>
+                    <li>
+                      <span class="contribution-topic"><span class="contribution-item-symbol"><svg class="icon" aria-hidden="true"><use href="#i-phone"/></svg></span><span data-i18n="focus.beauty.2" >Авторизация</span></span>
+                      <p data-i18n="project.beauty.bullet2" >Добавил регистрацию, авторизацию и push-уведомления.</p>
+                    </li>
+                    <li>
+                      <span class="contribution-topic"><span class="contribution-item-symbol"><svg class="icon" aria-hidden="true"><use href="#i-book"/></svg></span><span data-i18n="focus.beauty.3" >Локализация</span></span>
+                      <p data-i18n="project.beauty.bullet3" >Поддерживал мультиязычность и адаптировал интерфейсы под разные экраны. Участвовал в проработке требований и оценке задач.</p>
+                    </li>
+                  </ul>
+                </div>
+                </details>
+<a class="timeline-product-link" href="#project-beauty"><span data-i18n="career.backToProject" >Посмотреть продукт</span><svg class="icon" aria-hidden="true"><use href="#i-arrow"/></svg></a>
+              </div>
+            </article>
+            <article class="timeline-item " id="experience-otis">
+              <span class="timeline-marker" aria-hidden="true"></span>
+              <div class="timeline-card">
+                <div class="timeline-top">
+                  <h3 id="experience-otis-title"><span data-i18n="project.otis.name" >ОТИС</span></h3>
+                </div>
+                <p class="timeline-date"><time datetime="2021-02"><span data-i18n="period.otis.start" >Февраль 2021</span></time><span class="date-dash" aria-hidden="true">—</span><span><span data-i18n="period.otis.end" >Март 2022</span></span></p>
+                <p class="timeline-role">Flutter Developer · iOS / Android</p>
+                <p data-i18n="career.subtitle.otis" class="timeline-summary">Геолокация и связь для групп быстрого реагирования.</p>
+                <details class="contribution" ><summary class="contribution-summary"><span class="contribution-heading"><span class="contribution-symbol"><svg class="icon" aria-hidden="true"><use href="#i-pin"/></svg></span><span class="contribution-heading-copy"><span data-i18n="career.contribution" class="contribution-title">Мой вклад</span><span data-i18n="contribution.preview.otis" class="contribution-preview">Карты, геолокация и связь</span></span></span><span class="contribution-action"><span data-i18n="contribution.expand" class="contribution-label-expand">Подробнее</span><span data-i18n="contribution.collapse" class="contribution-label-collapse">Свернуть</span><span class="contribution-chevron"><svg class="icon" aria-hidden="true"><use href="#i-chevron"/></svg></span></span></summary>
+                <div class="contribution-body">
+                  <ul class="contribution-grid">
+                    <li>
+                      <span class="contribution-topic"><span class="contribution-item-symbol"><svg class="icon" aria-hidden="true"><use href="#i-code"/></svg></span><span data-i18n="focus.otis.0" >Разработка</span></span>
+                      <p data-i18n="project.otis.bullet0" >Разрабатывал новые экраны и функциональность внутреннего приложения.</p>
+                    </li>
+                    <li>
+                      <span class="contribution-topic"><span class="contribution-item-symbol"><svg class="icon" aria-hidden="true"><use href="#i-pin"/></svg></span><span data-i18n="focus.otis.1" >Карты и геолокация</span></span>
+                      <p data-i18n="project.otis.bullet1" >Интегрировал Google Maps, отображение объектов и работу с геолокацией.</p>
+                    </li>
+                    <li>
+                      <span class="contribution-topic"><span class="contribution-item-symbol"><svg class="icon" aria-hidden="true"><use href="#i-users"/></svg></span><span data-i18n="focus.otis.2" >Авторизация</span></span>
+                      <p data-i18n="project.otis.bullet2" >Реализовывал авторизацию, включая вход через социальные сети.</p>
+                    </li>
+                    <li>
+                      <span class="contribution-topic"><span class="contribution-item-symbol"><svg class="icon" aria-hidden="true"><use href="#i-layers"/></svg></span><span data-i18n="focus.otis.3" >События в реальном времени</span></span>
+                      <p data-i18n="project.otis.bullet3" >Поддерживал WebSocket: входящие события, восстановление соединения и исправление ошибок.</p>
+                    </li>
+                  </ul>
+                </div>
+                </details>
+<a class="timeline-product-link" href="#project-otis"><span data-i18n="career.backToProject" >Посмотреть продукт</span><svg class="icon" aria-hidden="true"><use href="#i-arrow"/></svg></a>
+              </div>
+            </article>
+          </div>
+        </div>
+      </section>
+      <section class="section stack-section" id="stack" aria-labelledby="stack-title">
+        <div class="container">
+          <div class="section-heading">
+            <div>
+              <p class="eyebrow section-index"><span data-i18n="stackEyebrow" >Технологический стек</span></p>
+              <h2 data-i18n="stackTitle" id="stack-title">От архитектуры
+до публикации.</h2>
+            </div>
+            <p data-i18n="stackIntro" class="section-intro">Архитектура, данные, интерфейс и релиз — четыре части работы над мобильным продуктом.</p>
+          </div>
+          <div class="capability-explorer">
+            <div class="capability-tabs" role="tablist" data-i18n-aria-label="cap.label" aria-label="Этапы мобильной разработки" hidden>
+              <button type="button" id="cap-tab-architecture" role="tab" aria-controls="cap-panel-architecture" aria-selected="true" tabindex="0" data-capability="architecture"><svg class="icon" aria-hidden="true"><use href="#i-layers"/></svg><span data-i18n="cap.architecture.tab" >Архитектура</span></button><button type="button" id="cap-tab-data" role="tab" aria-controls="cap-panel-data" aria-selected="false" tabindex="-1" data-capability="data"><svg class="icon" aria-hidden="true"><use href="#i-code"/></svg><span data-i18n="cap.data.tab" >Данные</span></button><button type="button" id="cap-tab-interface" role="tab" aria-controls="cap-panel-interface" aria-selected="false" tabindex="-1" data-capability="interface"><svg class="icon" aria-hidden="true"><use href="#i-phone"/></svg><span data-i18n="cap.interface.tab" >Интерфейс</span></button><button type="button" id="cap-tab-release" role="tab" aria-controls="cap-panel-release" aria-selected="false" tabindex="-1" data-capability="release"><svg class="icon" aria-hidden="true"><use href="#i-check"/></svg><span data-i18n="cap.release.tab" >Релиз</span></button>
+            </div>
+            <div class="capability-panel" id="cap-panel-architecture" data-capability-panel="architecture">
+              <div class="capability-copy">
+                <span class="capability-emblem"><svg class="icon" aria-hidden="true"><use href="#i-layers"/></svg></span>
+                <h3 data-i18n="cap.architecture.title" id="cap-title-architecture">Архитектура приложения</h3>
+                <p data-i18n="cap.architecture.description" class="capability-description">Разделяю интерфейс, состояние и работу с данными, чтобы продукт было удобно развивать.</p>
+                <p class="capability-tools-label"><span data-i18n="cap.tools" >Рабочие инструменты</span></p>
+                <div class="capability-tools">
+                  <span>Flutter</span><span>Dart</span><span>BLoC / Cubit</span><span>Clean Architecture</span><span>GoRouter</span><span>Freezed</span>
+                </div>
+                <a class="capability-example" href="#experience-terra" data-experience-link><span data-i18n="cap.example" >Пример в опыте</span><strong><span data-i18n="project.terra.name" >CRTEX</span></strong><svg class="icon" aria-hidden="true"><use href="#i-arrow"/></svg></a>
+              </div>
+              <div class="capability-visual visual-architecture" role="group" data-i18n-aria-label="cap.flowLabel" aria-label="Схема работы">
+                <div class="workflow-grid" aria-hidden="true">
+                </div>
+                <div class="workflow-path" aria-hidden="true">
+                </div>
+                <div class="workflow-nodes">
+                  <div class="workflow-node">
+                    <svg class="icon" aria-hidden="true"><use href="#i-phone"/></svg><strong data-i18n="cap.architecture.node0" >Интерфейс</strong><span>Flutter UI</span>
+                  </div>
+                  <div class="workflow-node">
+                    <svg class="icon" aria-hidden="true"><use href="#i-layers"/></svg><strong data-i18n="cap.architecture.node1" >Состояние</strong><span>BLoC / Cubit</span>
+                  </div>
+                  <div class="workflow-node">
+                    <svg class="icon" aria-hidden="true"><use href="#i-code"/></svg><strong data-i18n="cap.architecture.node2" >Данные</strong><span>Repository</span>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="capability-panel" id="cap-panel-data" data-capability-panel="data">
+              <div class="capability-copy">
+                <span class="capability-emblem"><svg class="icon" aria-hidden="true"><use href="#i-code"/></svg></span>
+                <h3 data-i18n="cap.data.title" id="cap-title-data">Интеграции и данные</h3>
+                <p data-i18n="cap.data.description" class="capability-description">Соединяю приложение с API и локальным хранилищем. Учитываю авторизацию, ошибки сети и события в реальном времени.</p>
+                <p class="capability-tools-label"><span data-i18n="cap.tools" >Рабочие инструменты</span></p>
+                <div class="capability-tools">
+                  <span>REST API</span><span>Dio</span><span>WebSocket</span><span>Drift / SQLite</span><span>Hive</span><span>Firebase</span>
+                </div>
+                <a class="capability-example" href="#experience-citadel" data-experience-link><span data-i18n="cap.example" >Пример в опыте</span><strong><span data-i18n="project.citadel.name" >Citadel.one</span></strong><svg class="icon" aria-hidden="true"><use href="#i-arrow"/></svg></a>
+              </div>
+              <div class="capability-visual visual-data" role="group" data-i18n-aria-label="cap.flowLabel" aria-label="Схема работы">
+                <div class="workflow-grid" aria-hidden="true">
+                </div>
+                <div class="workflow-path" aria-hidden="true">
+                </div>
+                <div class="workflow-nodes">
+                  <div class="workflow-node">
+                    <svg class="icon" aria-hidden="true"><use href="#i-phone"/></svg><strong data-i18n="cap.data.node0" >Приложение</strong><span>Flutter</span>
+                  </div>
+                  <div class="workflow-node">
+                    <svg class="icon" aria-hidden="true"><use href="#i-code"/></svg><strong data-i18n="cap.data.node1" >API</strong><span>REST / WebSocket</span>
+                  </div>
+                  <div class="workflow-node">
+                    <svg class="icon" aria-hidden="true"><use href="#i-layers"/></svg><strong data-i18n="cap.data.node2" >Хранилище</strong><span>SQLite / Hive</span>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="capability-panel" id="cap-panel-interface" data-capability-panel="interface">
+              <div class="capability-copy">
+                <span class="capability-emblem"><svg class="icon" aria-hidden="true"><use href="#i-phone"/></svg></span>
+                <h3 data-i18n="cap.interface.title" id="cap-title-interface">Интерфейсы и качество</h3>
+                <p data-i18n="cap.interface.description" class="capability-description">Адаптирую интерфейсы, локализую сценарии и проверяю поведение на разных экранах.</p>
+                <p class="capability-tools-label"><span data-i18n="cap.tools" >Рабочие инструменты</span></p>
+                <div class="capability-tools">
+                  <span>Figma</span><span>Widgetbook</span><span>intl</span><span>Flutter Test</span><span>DevTools</span><span>Sentry</span>
+                </div>
+                <a class="capability-example" href="#experience-beauty" data-experience-link><span data-i18n="cap.example" >Пример в опыте</span><strong><span data-i18n="project.beauty.name" >Beauty Agent</span></strong><svg class="icon" aria-hidden="true"><use href="#i-arrow"/></svg></a>
+              </div>
+              <div class="capability-visual visual-interface" role="group" data-i18n-aria-label="cap.flowLabel" aria-label="Схема работы">
+                <div class="workflow-grid" aria-hidden="true">
+                </div>
+                <div class="workflow-path" aria-hidden="true">
+                </div>
+                <div class="workflow-nodes">
+                  <div class="workflow-node">
+                    <svg class="icon" aria-hidden="true"><use href="#i-grid"/></svg><strong data-i18n="cap.interface.node0" >Дизайн</strong><span>Figma</span>
+                  </div>
+                  <div class="workflow-node">
+                    <svg class="icon" aria-hidden="true"><use href="#i-phone"/></svg><strong data-i18n="cap.interface.node1" >Виджеты</strong><span>Material / Cupertino</span>
+                  </div>
+                  <div class="workflow-node">
+                    <svg class="icon" aria-hidden="true"><use href="#i-check"/></svg><strong data-i18n="cap.interface.node2" >Проверка</strong><span>Flutter Test</span>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="capability-panel" id="cap-panel-release" data-capability-panel="release">
+              <div class="capability-copy">
+                <span class="capability-emblem"><svg class="icon" aria-hidden="true"><use href="#i-check"/></svg></span>
+                <h3 data-i18n="cap.release.title" id="cap-title-release">Сборка и релиз</h3>
+                <p data-i18n="cap.release.description" class="capability-description">Автоматизирую сборки и публикацию. Отслеживаю ошибки после релиза и поддерживаю обновления.</p>
+                <p class="capability-tools-label"><span data-i18n="cap.tools" >Рабочие инструменты</span></p>
+                <div class="capability-tools">
+                  <span>GitHub Actions</span><span>GitLab CI/CD</span><span>Fastlane</span><span>FVM</span><span>Crashlytics</span><span>App Store</span><span>Google Play</span>
+                </div>
+                <a class="capability-example" href="#experience-terra" data-experience-link><span data-i18n="cap.example" >Пример в опыте</span><strong><span data-i18n="project.terra.name" >CRTEX</span></strong><svg class="icon" aria-hidden="true"><use href="#i-arrow"/></svg></a>
+              </div>
+              <div class="capability-visual visual-release" role="group" data-i18n-aria-label="cap.flowLabel" aria-label="Схема работы">
+                <div class="workflow-grid" aria-hidden="true">
+                </div>
+                <div class="workflow-path" aria-hidden="true">
+                </div>
+                <div class="workflow-nodes">
+                  <div class="workflow-node">
+                    <svg class="icon" aria-hidden="true"><use href="#i-code"/></svg><strong data-i18n="cap.release.node0" >Код</strong><span>Git</span>
+                  </div>
+                  <div class="workflow-node">
+                    <svg class="icon" aria-hidden="true"><use href="#i-layers"/></svg><strong data-i18n="cap.release.node1" >CI/CD</strong><span>Fastlane</span>
+                  </div>
+                  <div class="workflow-node">
+                    <svg class="icon" aria-hidden="true"><use href="#i-check"/></svg><strong data-i18n="cap.release.node2" >Магазины</strong><span>iOS / Android</span>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <details class="ai-process"><summary><span class="ai-process-heading"><svg class="icon" aria-hidden="true"><use href="#i-code"/></svg><span data-i18n="cap.ai" >AI-инструменты и проверка изменений</span></span><span class="details-toggle"><svg class="icon" aria-hidden="true"><use href="#i-plus"/></svg></span></summary>
+          <div class="ai-process-body">
+            <p data-i18n="aiDescription" >Cursor, Codex и Claude Code — для анализа, разработки и рефакторинга. Настраиваю MCP и контекст проекта. Решения и изменения проверяю через code review, анализ и тестирование.</p>
+          </div>
+          </details>
+        </div>
+      </section>
+      <section class="section container team-section" id="about" aria-labelledby="about-title">
+        <div class="team-panel">
+          <div class="team-overview">
+            <div class="about-heading">
+              <p class="eyebrow section-index"><span data-i18n="aboutEyebrow" >Работа с командой</span></p>
+              <h2 data-i18n="aboutTitle" id="about-title">Продуктовый подход.
+Командная работа.</h2>
+            </div>
+            <p data-i18n="team.intro" class="team-intro">Принимаю технические решения с учётом задач продукта. Помогаю команде двигаться от требований к релизу и поддерживать качество разработки.</p>
+          </div>
+          <div class="team-practices">
+            <article class="team-practice">
+              <span class="team-practice-icon"><svg class="icon" aria-hidden="true"><use href="#i-calendar"/></svg></span>
+              <div>
+                <h3 data-i18n="team.planning.title" >Планирование</h3>
+                <p data-i18n="team.planning.text" >Уточняю требования, декомпозирую задачи и оцениваю сроки.</p>
+              </div>
+            </article>
+            <article class="team-practice">
+              <span class="team-practice-icon"><svg class="icon" aria-hidden="true"><use href="#i-code"/></svg></span>
+              <div>
+                <h3 data-i18n="team.quality.title" >Качество разработки</h3>
+                <p data-i18n="team.quality.text" >Прорабатываю архитектуру, провожу code review и уделяю внимание производительности приложения.</p>
+              </div>
+            </article>
+            <article class="team-practice">
+              <span class="team-practice-icon"><svg class="icon" aria-hidden="true"><use href="#i-users"/></svg></span>
+              <div>
+                <h3 data-i18n="team.people.title" >Работа с командой</h3>
+                <p data-i18n="team.people.text" >Провожу технические собеседования и помогаю передавать знания внутри команды.</p>
+              </div>
+            </article>
+          </div>
+          <div class="team-facts">
+            <article class="team-fact team-education">
+              <div class="team-fact-heading">
+                <span class="team-fact-icon"><svg class="icon" aria-hidden="true"><use href="#i-book"/></svg></span>
+                <h3 data-i18n="team.education" >Образование</h3>
+                <span class="team-year">2022</span>
+              </div>
+              <strong data-i18n="education" class="team-fact-value">Прикладная информатика</strong>
+              <p data-i18n="university" class="team-fact-detail">Санкт-Петербургский гуманитарный университет профсоюзов · бакалавр</p>
+            </article>
+            <article class="team-fact team-languages">
+              <div class="team-fact-heading">
+                <span class="team-fact-icon"><svg class="icon" aria-hidden="true"><use href="#i-globe"/></svg></span>
+                <h3 data-i18n="team.languages" >Языки</h3>
+              </div>
+              <div class="team-language-row">
+                <span data-i18n="team.russian" >Русский</span><span class="team-language-level"><span data-i18n="team.native" >Родной</span></span>
+              </div>
+              <div class="team-language-row">
+                <span data-i18n="team.english" >Английский</span><span class="team-language-level">B1</span>
+              </div>
+            </article>
+            <article class="team-fact team-work">
+              <div class="team-fact-heading">
+                <span class="team-fact-icon"><svg class="icon" aria-hidden="true"><use href="#i-pin"/></svg></span>
+                <h3 data-i18n="team.work" >Формат работы</h3>
+              </div>
+              <strong data-i18n="team.city" class="team-fact-value">Москва</strong>
+              <div class="team-work-modes">
+                <span data-i18n="team.remote" >Удалённо</span><span data-i18n="team.hybrid" >Гибрид</span><span data-i18n="team.office" >Офис</span>
+              </div>
+            </article>
+          </div>
+        </div>
+      </section>
+      <section class="contact-section" id="contact" aria-labelledby="contact-title">
+        <div class="container">
+          <div class="contact-top">
+            <p class="eyebrow section-index"><span data-i18n="contactEyebrow" >Контакты</span></p>
+            <span class="availability"><i></i><span data-i18n="availability" >Рассматриваю новые предложения</span></span>
+          </div>
+          <div class="contact-grid">
+            <div class="contact-copy">
+              <h2 id="contact-title"><span data-i18n="contactTitle1">Обсудим продукт</span><br><span class="contact-accent" data-i18n="contactTitle2">или работу в команде.</span></h2>
+              <p data-i18n="contactDescription" class="contact-description">Расскажите о продукте, задачах и команде. Обсудим, чем мой опыт может быть полезен.</p>
+              <a class="contact-cv" href="resume.pdf" data-resume-link hreflang="ru" download>
+                <span class="contact-cv-icon" aria-hidden="true"><svg class="icon"><use href="#i-file"/></svg></span>
+                <span class="contact-cv-copy">
+                  <span class="eyebrow"><span data-i18n="resumeLabel">РЕЗЮМЕ</span><span class="contact-cv-format">PDF</span></span>
+                  <strong data-i18n="downloadPdf">Скачать резюме</strong>
+                </span>
+                <span class="contact-cv-language" data-i18n="contact.cvLanguage">RU</span>
+                <span class="contact-cv-action" aria-hidden="true"><svg class="icon contact-cv-arrow"><use href="#i-down"/></svg></span>
+              </a>
+            </div>
+            <div class="contact-links">
+              <a class="contact-channel contact-telegram" href="https://t.me/Shestakov_V" target="_blank" rel="noopener noreferrer">
+                <span class="contact-channel-icon" aria-hidden="true"><svg class="icon"><use href="#i-telegram"/></svg></span>
+                <span class="contact-channel-copy"><span class="eyebrow">TELEGRAM</span><strong>@Shestakov_V</strong><span class="contact-channel-note" data-i18n="contact.telegramHint">Предпочтительный способ связи</span></span>
+                <svg class="icon contact-channel-arrow" aria-hidden="true"><use href="#i-arrow"/></svg>
+              </a>
+              <a class="contact-channel" href="mailto:shestakovvitaliy87@gmail.com">
+                <span class="contact-channel-icon" aria-hidden="true"><svg class="icon"><use href="#i-mail"/></svg></span>
+                <span class="contact-channel-copy"><span class="eyebrow">EMAIL</span><strong>shestakovvitaliy87@gmail.com</strong></span>
+                <svg class="icon contact-channel-arrow" aria-hidden="true"><use href="#i-arrow"/></svg>
+              </a>
+              <a class="contact-channel" href="https://github.com/VitaliyShestakov" target="_blank" rel="noopener noreferrer">
+                <span class="contact-channel-icon" aria-hidden="true"><svg class="icon"><use href="#i-github"/></svg></span>
+                <span class="contact-channel-copy"><span class="eyebrow">GITHUB</span><strong>VitaliyShestakov</strong></span>
+                <svg class="icon contact-channel-arrow" aria-hidden="true"><use href="#i-arrow"/></svg>
+              </a>
+            </div>
+          </div>
+        </div>
+      </section>
+    </main>
+    <footer class="container footer">
+      <a class="brand" href="#home">shestakov<span class="brand-dot">.</span></a>
+      <div class="footer-middle">
+        <span>© <span id="year">2026</span> <span data-i18n="fullName">Виталий Шестаков</span></span>
       </div>
-      <p class="project-caption">Визуальные обложки — иллюстрации направлений работы. Описание задач основано на профессиональном опыте.</p>
-    </section>
-
-    <section class="section container" id="experience" aria-labelledby="experience-title">
-      <div class="section-heading"><div><p class="overline">02 / Опыт</p><h2 id="experience-title">От задачи к продукту<span class="accent">.</span></h2></div><a class="inline-link" href="resume.pdf" target="_blank" rel="noopener">Полное резюме ↗</a></div>
-      <div class="experience-list">
-        <article class="experience-row"><div class="experience-date">Окт 2023 — сейчас<span class="current-label">Текущий проект</span></div><div class="experience-company"><h3>Terra Club</h3><span>Flutter-разработчик</span></div><p>Мобильное и Web-приложение сообщества. Архитектура, разработка, релизы и координация работы команды.</p><span class="experience-index" aria-hidden="true">01</span></article>
-        <article class="experience-row"><div class="experience-date">Авг 2022 — сен 2023</div><div class="experience-company"><h3>Citadel.one</h3><span>Flutter-разработчик</span></div><p>Криптовалютный кошелёк. WalletConnect, DApps, криптовалютные API и обработка транзакций.</p><span class="experience-index" aria-hidden="true">02</span></article>
-        <article class="experience-row"><div class="experience-date">Июн — авг 2022</div><div class="experience-company"><h3>Tayyab</h3><span>Flutter-разработчик</span></div><p>Цифровой финансовый сервис. Переводы, история операций, выписки, виртуальные и физические карты.</p><span class="experience-index" aria-hidden="true">03</span></article>
-        <article class="experience-row"><div class="experience-date">Апр — июн 2022</div><div class="experience-company"><h3>Beauty Agent</h3><span>Flutter-разработчик</span></div><p>Приложение для мастеров. Анкеты клиентов, расписание, записи, авторизация, push-уведомления и локализация.</p><span class="experience-index" aria-hidden="true">04</span></article>
-        <article class="experience-row"><div class="experience-date">Фев 2021 — мар 2022</div><div class="experience-company"><h3>ОТИС</h3><span>Flutter-разработчик</span></div><p>Внутреннее приложение групп быстрого реагирования. Google Maps, геолокация, авторизация и события через WebSocket.</p><span class="experience-index" aria-hidden="true">05</span></article>
+    </footer>
+    <dialog id="command-dialog" class="command-dialog" aria-labelledby="command-title">
+      <div class="dialog-heading">
+        <h2 data-i18n="command.title" id="command-title">Разделы и действия</h2>
+        <button type="button" class="dialog-close icon-button" data-close-dialog data-i18n-aria-label="dialog.close" aria-label="Закрыть диалог">×</button>
       </div>
-    </section>
-
-    <section class="section stack-section" id="stack" aria-labelledby="stack-title"><div class="container">
-      <div class="section-heading"><div><p class="overline">03 / Инструменты</p><h2 id="stack-title">Стек под задачу<span class="accent">.</span></h2></div><p class="section-note">Поддерживаемый код.<br>Понятная архитектура.</p></div>
-      <div class="stack-grid">
-        <article class="stack-item"><span class="stack-icon" aria-hidden="true">{ }</span><h3>Flutter & архитектура</h3><p>Dart · Flutter · BLoC / Cubit · Provider · Clean Architecture · SOLID · DI · AutoRoute · GoRouter</p></article>
-        <article class="stack-item"><span class="stack-icon" aria-hidden="true">↔</span><h3>Данные & интеграции</h3><p>REST API · Dio · WebSocket · Drift · SQLite · Hive · Secure Storage · Firebase · внешние SDK</p></article>
-        <article class="stack-item"><span class="stack-icon" aria-hidden="true">✳</span><h3>Интерфейсы & качество</h3><p>Адаптивные интерфейсы · Figma · UI-kit · Widgetbook · intl · Flutter Test · DevTools · Sentry</p></article>
-        <article class="stack-item"><span class="stack-icon" aria-hidden="true">↗</span><h3>Инструменты & релизы</h3><p>Git · GitHub Actions · GitLab CI/CD · Fastlane · FVM · App Store · Google Play · code review</p></article>
+      <label class="command-search"><span aria-hidden="true">⌕</span><span class="sr-only" data-i18n="command.search">Найти раздел или действие…</span><input id="command-search" type="search" autocomplete="off" spellcheck="false" data-i18n-placeholder="command.search" placeholder="Найти раздел или действие…" aria-controls="command-results"></label>
+      <div id="command-results" class="command-results">
       </div>
-      <div class="ai-note"><span class="mono">AI-assisted,<br>human-reviewed.</span><p>Использую Cursor, Codex и Claude Code для анализа, разработки и рефакторинга. Настраиваю MCP и контекст проекта. Проверяю изменения через code review, анализ и тестирование.</p><span class="ai-asterisk" aria-hidden="true">✳</span></div>
-    </div></section>
-
-    <section class="section container about" aria-labelledby="about-title"><div><p class="overline">04 / О подходе</p><h2 id="about-title">Думаю дальше<br>отдельного экрана<span class="accent">.</span></h2></div><div class="about-copy"><p>Для меня разработка — это не только интерфейс. Важно понять задачу, выбрать техническое решение и довести его до работающего продукта.</p><p>Декомпозирую задачи, оцениваю сроки, участвую в планировании, code review и найме. Уделяю внимание производительности, поддерживаемости кода и удобству приложения.</p><div class="education"><span class="overline">Образование / 2022</span><p>Прикладная информатика · бакалавр</p><span>Санкт-Петербургский гуманитарный университет профсоюзов</span></div><div class="languages"><span>Русский — родной</span><span>English — B1</span></div></div></section>
-
-    <section class="contact-section" id="contact" aria-labelledby="contact-title"><div class="container contact-inner"><div><p class="overline">05 / На связи</p><h2 id="contact-title">Обсудим ваш<br>следующий проект<span>?</span></h2><p>Открыт к предложениям. Буду рад рассказать<br>о своём опыте и задачах, которые могу решить.</p><a class="button contact-button" href="https://t.me/Shestakov_V" target="_blank" rel="noopener noreferrer">Написать в Telegram <span aria-hidden="true">↗</span></a></div><div class="contact-links"><a href="mailto:shestakovvitaliy87@gmail.com"><span class="overline">Email</span><span class="contact-address">shestakovvitaliy87@gmail.com <b aria-hidden="true">↗</b></span></a><a href="https://github.com/VitaliyShestakov" target="_blank" rel="noopener noreferrer"><span class="overline">GitHub</span><span class="contact-address">VitaliyShestakov <b aria-hidden="true">↗</b></span></a><a href="resume.pdf" download><span class="overline">Резюме</span><span class="contact-address">Скачать PDF <b aria-hidden="true">↓</b></span></a></div></div></section>
-  </main>
-  <footer class="container footer"><a class="wordmark" href="#home" aria-label="Наверх">vs<span>_</span></a><span>© <span id="year">2026</span> Виталий Шестаков</span><span class="footer-note">Built with care. Shipped with purpose.</span><a href="https://github.com/VitaliyShestakov/portfolio" target="_blank" rel="noopener noreferrer">Исходный код ↗</a></footer>
-</body>
+      <p data-i18n="command.empty" class="command-empty" hidden>Ничего не найдено. Попробуйте другой запрос.</p>
+      <div class="command-footer">
+        <span><kbd>↑ ↓</kbd> <span data-i18n="command.hint" >для навигации</span></span><span><kbd>↵</kbd> <span data-i18n="command.select" >выбрать</span></span><span><kbd>esc</kbd> <span data-i18n="command.close" >закрыть</span></span>
+      </div>
+    </dialog>
+    <dialog id="email-dialog" class="email-dialog" aria-labelledby="email-title">
+      <div class="dialog-heading">
+        <h2 data-i18n="email.fallback" id="email-title">Выделите и скопируйте адрес:</h2>
+        <button type="button" class="dialog-close icon-button" data-close-dialog data-i18n-aria-label="dialog.close" aria-label="Закрыть диалог">×</button>
+      </div>
+      <input aria-label="Email" value="shestakovvitaliy87@gmail.com" readonly>
+    </dialog>
+    <script id="app-screens" type="application/json">{"terra":{"name":"CRTEX","id":"com.club.terra","screens":[{"src":"assets/apps/terra-03.webp","alt":"screenshot.terra.0"},{"src":"assets/apps/terra-04.webp","alt":"screenshot.terra.1"},{"src":"assets/apps/terra-05.webp","alt":"screenshot.terra.2"},{"src":"assets/apps/terra-02.webp","alt":"screenshot.terra.3"}],"store":"https://play.google.com/store/apps/details?id=com.club.terra"},"citadel":{"name":"Citadel.one","id":"one.citadel.mobile","screens":[{"src":"assets/apps/citadel-01.webp","alt":"screenshot.citadel.0"},{"src":"assets/apps/citadel-03.webp","alt":"screenshot.citadel.1"},{"src":"assets/apps/citadel-04.webp","alt":"screenshot.citadel.2"}],"store":"https://play.google.com/store/apps/details?id=one.citadel.mobile"},"tayyab":{"name":"Tayyab","id":"co.tayyab.app","screens":[{"src":"assets/apps/tayyab-02.webp","alt":"screenshot.tayyab.0"},{"src":"assets/apps/tayyab-04.webp","alt":"screenshot.tayyab.1"},{"src":"assets/apps/tayyab-05.webp","alt":"screenshot.tayyab.2"}],"store":"https://play.google.com/store/apps/details?id=co.tayyab.app"},"beauty":{"name":"Beauty Agent","id":"com.beautyagent","screens":[{"src":"assets/apps/beauty-appstore-calendar.webp","alt":"screenshot.beauty.0"},{"src":"assets/apps/beauty-appstore-assistant.webp","alt":"screenshot.beauty.assistant"},{"src":"assets/apps/beauty-01.webp","alt":"screenshot.beauty.0"},{"src":"assets/apps/beauty-03.webp","alt":"screenshot.beauty.1"},{"src":"assets/apps/beauty-04.webp","alt":"screenshot.beauty.2"}],"store":"https://play.google.com/store/apps/details?id=com.beautyagent"},"otis":{"name":"OTIS Security","id":"kz.otisdevteam.otis_security","screens":[{"src":"assets/apps/otis-01.webp","alt":"screenshot.otis.0"},{"src":"assets/apps/otis-02.webp","alt":"screenshot.otis.1"},{"src":"assets/apps/otis-03.webp","alt":"screenshot.otis.2"}],"store":"https://play.google.com/store/apps/details?id=kz.otisdevteam.otis_security"}}</script>
+    <dialog id="app-gallery" class="app-gallery" aria-labelledby="gallery-title">
+      <div class="gallery-heading">
+        <div>
+          <p data-i18n="gallery.label" class="eyebrow">Скриншоты приложения</p>
+          <h2 id="gallery-title">CRTEX</h2>
+        </div>
+        <button type="button" class="dialog-close icon-button" data-close-dialog data-i18n-aria-label="dialog.close" aria-label="Закрыть диалог">×</button>
+      </div>
+      <div class="gallery-stage">
+        <img id="gallery-image" alt="" width="900" height="1600">
+      </div>
+      <div class="gallery-footer">
+        <a id="gallery-store" href="https://play.google.com/store/apps/details?id=com.club.terra" target="_blank" rel="noopener noreferrer"><span data-i18n="gallery.source">Открыть в Google Play</span><svg class="icon" aria-hidden="true"><use href="#i-arrow"/></svg></a>
+        <div class="gallery-controls">
+          <button type="button" class="icon-button" data-gallery-step="-1" data-i18n-aria-label="gallery.previous" aria-label="Предыдущий скриншот"><svg class="icon" aria-hidden="true"><use href="#i-chevron"/></svg></button><span id="gallery-position" role="status" aria-live="polite">1 / 4</span><button type="button" class="icon-button" data-gallery-step="1" data-i18n-aria-label="gallery.next" aria-label="Следующий скриншот"><svg class="icon" aria-hidden="true"><use href="#i-chevron"/></svg></button>
+        </div>
+      </div>
+    </dialog>
+    <div id="toast" class="toast" role="status" aria-live="polite">
+    </div>
+  </body>
 </html>

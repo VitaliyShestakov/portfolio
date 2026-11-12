@@ -6,3 +6,7 @@ node_modules/
 *.log
 .playwright/
 test-results/
+.cache/
+dist/
+__pycache__/
+*.pyc

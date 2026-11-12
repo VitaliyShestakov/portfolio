@@ -1,0 +1,20 @@
+{
+  "name": "vitaliy-shestakov-portfolio",
+  "version": "1.0.0",
+  "private": true,
+  "description": "Bilingual portfolio with local assets and no runtime dependencies.",
+  "type": "module",
+  "engines": { "node": ">=22" },
+  "scripts": {
+    "dev": "node scripts/serve.mjs",
+    "check": "node scripts/check.mjs",
+    "test": "node --test tests/release.test.mjs",
+    "test:browser": "node tests/verify.mjs",
+    "test:navigation": "node tests/navigation.mjs",
+    "build": "node scripts/build.mjs",
+    "preview": "node scripts/serve.mjs --dir dist",
+    "assets:build": "node scripts/build-app-previews.mjs",
+    "cv:html": "python3 content/cv/build_resume_en.py",
+    "cv:export": "node scripts/export-cv.mjs"
+  }
+}
