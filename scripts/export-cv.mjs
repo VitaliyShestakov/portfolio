@@ -15,20 +15,18 @@ await mkdir(directory, { recursive: true });
 const browser = await connect();
 try {
   await browser.viewport(1000, 1300);
-  await browser.navigate(pathToFileURL(resolve(directory, `Vitaliy-Shestakov-CV-${language.toUpperCase()}-photo.html`)).href);
+  await browser.navigate(pathToFileURL(resolve(directory, `Vitaliy-Shestakov-CV-${language.toUpperCase()}.html`)).href);
   await browser.send('Emulation.setEmulatedMedia', { media: 'print' });
   const layout = await browser.evaluate(`(() => ({
     pages:[...document.querySelectorAll('.page')].map(page=>{
       const content=page.querySelector('.page-content').getBoundingClientRect(),footer=page.querySelector('.footer').getBoundingClientRect();
       return {clearance:footer.top-content.bottom,overflow:content.bottom>footer.top-10};
     }),
-    portraitLoaded:document.querySelector('.portrait').complete && document.querySelector('.portrait').naturalWidth>0,
     links:document.querySelectorAll('a[href]').length,
     text:document.querySelector('main').innerText
   }))()`);
   assert.equal(layout.pages.length, 2, 'CV must have two pages');
   assert.ok(layout.pages.every(page => !page.overflow), 'CV content exceeds the page');
-  assert.ok(layout.portraitLoaded, 'CV portrait failed to load');
   assert.deepEqual(browser.errors, [], 'CV browser errors');
   const pdf = await browser.send('Page.printToPDF', { printBackground: true, preferCSSPageSize: true, displayHeaderFooter: false, marginTop: 0, marginBottom: 0, marginLeft: 0, marginRight: 0, generateTaggedPDF: true });
   const name = language === 'en' ? 'resume-en' : 'resume';
